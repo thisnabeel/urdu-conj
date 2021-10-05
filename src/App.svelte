@@ -44,8 +44,8 @@
 <div id="form">
   <div class="form-control">
     <label for="gerund">Gerund</label>
-    <input type="text" bind:value={gerund} id="gerund" />
-     <input type="text" id="trans" />
+    <input type="text" bind:value={gerund} id="gerund" placeholder="Gerund" />
+     <input type="text" id="trans" placeholder="Translation"  />
   </div>
 
   <hr>
@@ -63,6 +63,19 @@
   <hr>
 </article>
 
+<article class="masc">
+  <small>You are ____-ing (informal) </small>
+  <p>Tum <b>{bones}</b>rahey ho </p>
+  <hr>
+</article>
+
+
+<article class="masc">
+  <small>You are ____-ing (formal) </small>
+  <p>Aap <b>{bones}</b>rahey hein </p>
+  <hr>
+</article>
+
 
 <article class="fem">
   <small>I'm ____-ing (1stp)</small>
@@ -73,6 +86,18 @@
 <article class="fem">
   <small>She is ____-ing </small>
   <p><u>Woh</u> <b>{bones}</b>rahee he </p>
+  <hr>
+</article>
+
+<article class="fem">
+  <small>You are ____-ing (informal) </small>
+  <p>Tum <b>{bones}</b>rahee ho </p>
+  <hr>
+</article>
+
+<article class="fem">
+  <small>You are ____-ing (formal) </small>
+  <p>Aap <b>{bones}</b>raheen hein </p>
   <hr>
 </article>
 
@@ -137,6 +162,31 @@
 <article>
   <small>____! (formal neutral)</small>
   <p><b>{bones}</b>ein!</p>
+  <hr>
+</article>
+
+<article class="masc">
+  <small>____? (informal)</small>
+  <p>Tum <b>{bones}</b>ogay?</p>
+  <hr>
+</article>
+
+<article class="masc">
+  <small>____? (formal)</small>
+  <p>Aap <b>{bones}</b>eingey?</p>
+  <hr>
+</article>
+
+
+<article class="fem">
+  <small>____? (formal)</small>
+  <p>Aap <b>{bones}</b>ogi?</p>
+  <hr>
+</article>
+
+<article class="fem">
+  <small>____? (formal)</small>
+  <p>Aap <b>{bones}</b>eingee?</p>
   <hr>
 </article>
 
