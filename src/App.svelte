@@ -166,26 +166,26 @@
 </article>
 
 <article class="masc">
-  <small>____? (informal)</small>
+  <small>Will you ____? (informal)</small>
   <p>Tum <b>{bones}</b>ogay?</p>
   <hr>
 </article>
 
 <article class="masc">
-  <small>____? (formal)</small>
+  <small>Will you ____? (formal)</small>
   <p>Aap <b>{bones}</b>eingey?</p>
   <hr>
 </article>
 
 
 <article class="fem">
-  <small>____? (formal)</small>
+  <small>Will you ____? (formal)</small>
   <p>Aap <b>{bones}</b>ogi?</p>
   <hr>
 </article>
 
 <article class="fem">
-  <small>____? (formal)</small>
+  <small>Will you ____? (formal)</small>
   <p>Aap <b>{bones}</b>eingee?</p>
   <hr>
 </article>
