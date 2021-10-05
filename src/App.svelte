@@ -179,7 +179,7 @@
 
 
 <article class="fem">
-  <small>Will you ____? (formal)</small>
+  <small>Will you ____? (informal)</small>
   <p>Tum <b>{bones}</b>ogi?</p>
   <hr>
 </article>
