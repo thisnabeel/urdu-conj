@@ -1,18 +1,25 @@
 <script>
   import ContactCard from "./ContactCard.svelte";
+  import Swal from 'sweetalert2'
+  import QuizModal from "./quizModal.svelte"
 
   let gerund = "";
+  let trans = "";
+  let questions = []
 
   $: bones = sanitize(gerund)
 
   function sanitize(gerund){
-    let pieces = gerund.split("na")
-    if (pieces.length > 1){
-      return pieces.splice(0, pieces.length-2).join('na') + 'na';
-    } else {
-      return gerund
-    }
+    // let pieces = gerund.split("na")
+    // if (pieces.length > 1){
+    //   return pieces.splice(0, pieces.length-2).join('na') + 'na';
+    // } else {
+    //   return gerund
+    // }
+    return gerund
   }
+
+
 </script>
 
 <style>
@@ -45,147 +52,160 @@
   <div class="form-control">
     <label for="gerund">Gerund</label>
     <input type="text" bind:value={gerund} id="gerund" placeholder="Gerund" />
-     <input type="text" id="trans" placeholder="Translation"  />
+    <input type="text" bind:value={trans}  id="trans" placeholder="Translation"  />
   </div>
 
   <hr>
 
+<QuizModal gerund="{gerund}" trans="{trans}"></QuizModal>
 
 <article class="masc">
-  <small>I'm ____-ing </small>
+  <small>I'm {trans}</small>
   <p>Mein <b>{bones}</b>rahaa hun </p>
   <hr>
 </article>
 
 <article class="masc">
-  <small>He is ____-ing </small>
+  <small>He is  {trans} </small>
   <p><u>Woh</u> <b>{bones}</b>rahaa he </p>
   <hr>
 </article>
 
 <article class="masc">
-  <small>You are ____-ing (informal) </small>
+  <small>You are {trans} (informal) </small>
   <p>Tum <b>{bones}</b>rahey ho </p>
   <hr>
 </article>
 
 
 <article class="masc">
-  <small>You are ____-ing (formal) </small>
+  <small>You are {trans} (formal) </small>
   <p>Aap <b>{bones}</b>rahey hein </p>
   <hr>
 </article>
 
 
 <article class="fem">
-  <small>I'm ____-ing (1stp)</small>
+  <small>I'm {trans}</small>
   <p>Mein <b>{bones}</b>rahee hun </p>
   <hr>
 </article>
 
 <article class="fem">
-  <small>She is ____-ing </small>
+  <small>She is {trans} </small>
   <p><u>Woh</u> <b>{bones}</b>rahee he </p>
   <hr>
 </article>
 
 <article class="fem">
-  <small>You are ____-ing (informal) </small>
+  <small>You are {trans} (informal) </small>
   <p>Tum <b>{bones}</b>rahee ho </p>
   <hr>
 </article>
 
 <article class="fem">
-  <small>You are ____-ing (formal) </small>
+  <small>You are {trans} (formal) </small>
   <p>Aap <b>{bones}</b>raheen hein </p>
   <hr>
 </article>
 
 <article>
-  <small class="neutral">We're ____-ing (neutral)</small>
+  <small class="neutral">We're {trans} (neutral)</small>
   <p>Hum <b>{bones}</b>rahey hein </p>
   <hr>
 </article>
 
 
 <article>
-  <small>They're ____-ing (they/formal neutral)</small>
+  <small>They're {trans} (they/formal neutral)</small>
   <p><u>Woh</u> <b>{bones}</b>rahey hein </p>
   <hr>
 </article>
 
 
 <article class="masc">
-  <small>I will ____ (1stp)</small>
+  <small>I will {trans.split("ing")[0]} (1stp)</small>
   <p>Mein <b>{bones}</b>unga</p>
   <hr>
 </article>
 
 <article class="masc">
-  <small>I will ____ (1stp)</small>
+  <small>He will {trans.split("ing")[0]}</small>
   <p><u>Woh</u> <b>{bones}</b>eyga</p>
   <hr>
 </article>
 
 <article class="fem">
-  <small>I will ____</small>
+  <small>I will {trans.split("ing")[0]}</small>
   <p>Mein <b>{bones}</b>ungi</p>
   <hr>
 </article>
 
 <article class="fem">
-  <small>She will ____</small>
+  <small>She will {trans.split("ing")[0]}</small>
   <p><u>Woh</u> <b>{bones}</b>eygi</p>
   <hr>
 </article>
 
 
 <article>
-  <small>We will ____ (neutral)</small>
+  <small>We will {trans.split("ing")[0]} (neutral)</small>
   <p>Hum <b>{bones}</b>eingay</p>
   <hr>
 </article>
 
 <article>
-  <small>They will ____ (they/formal neutral)</small>
+  <small>They/He will {trans.split("ing")[0]} (they/formal neutral)</small>
   <p><u>Woh</u> <b>{bones}</b>eingay</p>
   <hr>
 </article>
 
 
 <article>
-  <small>____! (neutral)</small>
+  <small>{trans.split("ing")[0]}! (informal neutral)</small>
   <p><b>{bones}</b>o!</p>
   <hr>
 </article>
 
 <article>
-  <small>____! (formal neutral)</small>
+  <small>Please {trans.split("ing")[0]}! (informal neutral)</small>
+  <p><b>{bones}</b>ein!</p>
+  <hr>
+</article>
+
+<article>
+  <small>{trans.split("ing")[0]}! (formal neutral)</small>
+  <p><b>{bones}</b>ein!</p>
+  <hr>
+</article>
+
+<article>
+  <small>Please {trans.split("ing")[0]}! (formal neutral)</small>
   <p><b>{bones}</b>ein!</p>
   <hr>
 </article>
 
 <article class="masc">
-  <small>Will you ____? (informal)</small>
+  <small>Will you {trans.split("ing")[0]}? (informal)</small>
   <p>Tum <b>{bones}</b>ogay?</p>
   <hr>
 </article>
 
 <article class="masc">
-  <small>Will you ____? (formal)</small>
+  <small>Will you {trans.split("ing")[0]}? (formal)</small>
   <p>Aap <b>{bones}</b>eingey?</p>
   <hr>
 </article>
 
 
 <article class="fem">
-  <small>Will you ____? (informal)</small>
+  <small>Will you {trans.split("ing")[0]}? (informal)</small>
   <p>Tum <b>{bones}</b>ogi?</p>
   <hr>
 </article>
 
 <article class="fem">
-  <small>Will you ____? (formal)</small>
+  <small>Will you {trans.split("ing")[0]}? (formal)</small>
   <p>Aap <b>{bones}</b>eingee?</p>
   <hr>
 </article>
