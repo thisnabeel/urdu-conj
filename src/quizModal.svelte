@@ -10,7 +10,7 @@
     let randomQuestion = ""
     let correct = 0
     let incorrect = 0
-    let showGreen = false
+    let showColors = false
 
     function openQuiz(){
         isOpen = !isOpen
@@ -22,7 +22,7 @@
 
     function randomizer(){
         questions = []
-        showGreen = false
+        showColors = false
         document.querySelectorAll('article').forEach((el, index) => {
             //do stuff with _el here
             let answer = el.querySelector("small").innerHTML
@@ -43,12 +43,13 @@
 
     function checkAnswer(q, a){
         if (q == a) {
-            showGreen = true
             correct += 1
         } else {
             incorrect += 1
         }
-        randomizer()
+        showColors = true
+        setTimeout(randomizer, 1500);
+        
     }
 
     function shuffle(array) {
@@ -69,6 +70,25 @@
     return array;
     }
 </script> 
+
+<style>
+    .green {
+        background-color:#9aff9a;
+    }
+
+    .red {
+        background-color: #ffb0b0;
+    }
+
+    .green, .red {
+        padding: 20px;
+    }
+
+    .hide-answers .green, 
+    .hide-answers .red {
+        background-color: transparent;
+    }
+</style>
  
 <Modal bind:open={isOpen}>
     <div class="modal-header">
@@ -80,9 +100,10 @@
     <div class="modal-body">
         {@html randomQuestion["question"]}
         <hr>
-        <ul>
+        <ul class="{!showColors ? 'hide-answers': ''}">
             {#each shuffle(randomQuestion["test"]) as q}
-                <li on:click="{checkAnswer(q, randomQuestion["answer"])}" class={{showGreen ? 'green': ''}}>{@html q}</li>
+                <li on:click="{checkAnswer(q, randomQuestion["answer"])}" 
+                    class="{q === randomQuestion["answer"] ? 'green': 'red'}">{@html q}</li>
             {/each}
         </ul>
     </div>
@@ -95,4 +116,4 @@
     </div>
 </Modal>
  
-<button class="btn btn-primary" on:click={openQuiz}>Quiz</button>
+<button class="btn btn-block btn-primary" on:click={openQuiz}>Quiz</button>

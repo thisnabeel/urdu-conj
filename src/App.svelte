@@ -3,8 +3,8 @@
   import Swal from 'sweetalert2'
   import QuizModal from "./quizModal.svelte"
 
-  let gerund = "";
-  let trans = "";
+  let gerund = "khaa";
+  let trans = "eating";
   let questions = []
 
   $: bones = sanitize(gerund)
@@ -56,8 +56,9 @@
   </div>
 
   <hr>
-
 <QuizModal gerund="{gerund}" trans="{trans}"></QuizModal>
+
+  <hr>
 
 <article class="masc">
   <small>I'm {trans}</small>
