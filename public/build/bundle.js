@@ -4825,7 +4825,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (117:12) {#each shuffle(randomQuestion["test"]) as q}
+    // (129:12) {#each shuffle(randomQuestion["test"]) as q}
     function create_each_block$1(ctx) {
     	let li;
     	let raw_value = /*q*/ ctx[13][0] + "";
@@ -4840,10 +4840,10 @@ var app = (function () {
 
     			attr_dev(li, "class", li_class_value = "" + (null_to_empty(/*q*/ ctx[13][0] === /*randomQuestion*/ ctx[3]["answer"][0]
     			? 'green'
-    			: 'red') + " svelte-la0g9x"));
+    			: 'red') + " svelte-1wl7g87"));
 
     			attr_dev(li, "gender", li_gender_value = /*q*/ ctx[13][1]);
-    			add_location(li, file$2, 117, 16, 2939);
+    			add_location(li, file$2, 129, 16, 3130);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -4869,7 +4869,7 @@ var app = (function () {
     			if (dirty & /*randomQuestion*/ 8 && raw_value !== (raw_value = /*q*/ ctx[13][0] + "")) li.innerHTML = raw_value;
     			if (dirty & /*randomQuestion*/ 8 && li_class_value !== (li_class_value = "" + (null_to_empty(/*q*/ ctx[13][0] === /*randomQuestion*/ ctx[3]["answer"][0]
     			? 'green'
-    			: 'red') + " svelte-la0g9x"))) {
+    			: 'red') + " svelte-1wl7g87"))) {
     				attr_dev(li, "class", li_class_value);
     			}
 
@@ -4888,14 +4888,14 @@ var app = (function () {
     		block,
     		id: create_each_block$1.name,
     		type: "each",
-    		source: "(117:12) {#each shuffle(randomQuestion[\\\"test\\\"]) as q}",
+    		source: "(129:12) {#each shuffle(randomQuestion[\\\"test\\\"]) as q}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (106:0) <Modal bind:open={isOpen}>
+    // (118:0) <Modal bind:open={isOpen}>
     function create_default_slot(ctx) {
     	let div0;
     	let h5;
@@ -4975,28 +4975,28 @@ var app = (function () {
     			button1 = element("button");
     			button1.textContent = "Refresh";
     			attr_dev(h5, "class", "modal-title");
-    			add_location(h5, file$2, 107, 4, 2518);
+    			add_location(h5, file$2, 119, 4, 2709);
     			attr_dev(span, "aria-hidden", "true");
-    			add_location(span, file$2, 109, 8, 2656);
+    			add_location(span, file$2, 121, 8, 2847);
     			attr_dev(button0, "type", "button");
     			attr_dev(button0, "class", "close");
-    			add_location(button0, file$2, 108, 8, 2577);
+    			add_location(button0, file$2, 120, 8, 2768);
     			attr_dev(div0, "class", "modal-header");
-    			add_location(div0, file$2, 106, 4, 2487);
+    			add_location(div0, file$2, 118, 4, 2678);
     			html_tag.a = t6;
-    			add_location(hr0, file$2, 114, 8, 2805);
-    			attr_dev(ul, "class", ul_class_value = "" + (null_to_empty(!/*showColors*/ ctx[6] ? 'hide-answers' : '') + " svelte-la0g9x"));
-    			add_location(ul, file$2, 115, 8, 2818);
+    			add_location(hr0, file$2, 126, 8, 2996);
+    			attr_dev(ul, "class", ul_class_value = "" + (null_to_empty(!/*showColors*/ ctx[6] ? 'hide-answers' : '') + " svelte-1wl7g87"));
+    			add_location(ul, file$2, 127, 8, 3009);
     			attr_dev(div1, "class", "modal-body");
-    			add_location(div1, file$2, 112, 4, 2729);
-    			add_location(hr1, file$2, 125, 4, 3213);
-    			add_location(p0, file$2, 126, 4, 3222);
-    			add_location(p1, file$2, 127, 4, 3252);
+    			add_location(div1, file$2, 124, 4, 2920);
+    			add_location(hr1, file$2, 137, 4, 3404);
+    			add_location(p0, file$2, 138, 4, 3413);
+    			add_location(p1, file$2, 139, 4, 3443);
     			attr_dev(button1, "type", "button");
     			attr_dev(button1, "class", "btn btn-primary");
-    			add_location(button1, file$2, 129, 8, 3321);
+    			add_location(button1, file$2, 141, 8, 3512);
     			attr_dev(div2, "class", "modal-footer");
-    			add_location(div2, file$2, 128, 4, 3286);
+    			add_location(div2, file$2, 140, 4, 3477);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -5071,7 +5071,7 @@ var app = (function () {
     				each_blocks.length = each_value.length;
     			}
 
-    			if (dirty & /*showColors*/ 64 && ul_class_value !== (ul_class_value = "" + (null_to_empty(!/*showColors*/ ctx[6] ? 'hide-answers' : '') + " svelte-la0g9x"))) {
+    			if (dirty & /*showColors*/ 64 && ul_class_value !== (ul_class_value = "" + (null_to_empty(!/*showColors*/ ctx[6] ? 'hide-answers' : '') + " svelte-1wl7g87"))) {
     				attr_dev(ul, "class", ul_class_value);
     			}
 
@@ -5100,7 +5100,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(106:0) <Modal bind:open={isOpen}>",
+    		source: "(118:0) <Modal bind:open={isOpen}>",
     		ctx
     	});
 
@@ -5139,7 +5139,7 @@ var app = (function () {
     			button = element("button");
     			button.textContent = "Quiz";
     			attr_dev(button, "class", "btn btn-block btn-primary");
-    			add_location(button, file$2, 133, 0, 3430);
+    			add_location(button, file$2, 145, 0, 3621);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -5382,36 +5382,68 @@ var app = (function () {
 
     /* src/words.svelte generated by Svelte v3.43.0 */
 
-    const { console: console_1 } = globals;
     const file$1 = "src/words.svelte";
 
     function get_each_context(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[3] = list[i];
+    	child_ctx[4] = list[i];
     	return child_ctx;
     }
 
-    // (43:4) {#each verbs as verb}
+    // (33:4) {#each verbs as verb}
     function create_each_block(ctx) {
     	let li;
-    	let t_value = /*verb*/ ctx[3]["doc"]["verb"] + "";
+    	let t_value = /*verb*/ ctx[4]["doc"]["verb"] + "";
     	let t;
+    	let li_gerund_value;
+    	let li_trans_value;
+    	let mounted;
+    	let dispose;
 
     	const block = {
     		c: function create() {
     			li = element("li");
     			t = text(t_value);
-    			add_location(li, file$1, 43, 8, 832);
+    			attr_dev(li, "gerund", li_gerund_value = /*verb*/ ctx[4]["doc"]["verb"]);
+    			attr_dev(li, "trans", li_trans_value = /*verb*/ ctx[4]["doc"]["trans"]);
+    			attr_dev(li, "class", "svelte-t0pyk8");
+    			add_location(li, file$1, 33, 4, 505);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
     			append_dev(li, t);
+
+    			if (!mounted) {
+    				dispose = listen_dev(
+    					li,
+    					"click",
+    					function () {
+    						if (is_function(/*populateMain*/ ctx[1](/*verb*/ ctx[4]["doc"]["verb"], /*verb*/ ctx[4]["doc"]["trans"]))) /*populateMain*/ ctx[1](/*verb*/ ctx[4]["doc"]["verb"], /*verb*/ ctx[4]["doc"]["trans"]).apply(this, arguments);
+    					},
+    					false,
+    					false,
+    					false
+    				);
+
+    				mounted = true;
+    			}
     		},
-    		p: function update(ctx, dirty) {
-    			if (dirty & /*verbs*/ 1 && t_value !== (t_value = /*verb*/ ctx[3]["doc"]["verb"] + "")) set_data_dev(t, t_value);
+    		p: function update(new_ctx, dirty) {
+    			ctx = new_ctx;
+    			if (dirty & /*verbs*/ 1 && t_value !== (t_value = /*verb*/ ctx[4]["doc"]["verb"] + "")) set_data_dev(t, t_value);
+
+    			if (dirty & /*verbs*/ 1 && li_gerund_value !== (li_gerund_value = /*verb*/ ctx[4]["doc"]["verb"])) {
+    				attr_dev(li, "gerund", li_gerund_value);
+    			}
+
+    			if (dirty & /*verbs*/ 1 && li_trans_value !== (li_trans_value = /*verb*/ ctx[4]["doc"]["trans"])) {
+    				attr_dev(li, "trans", li_trans_value);
+    			}
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(li);
+    			mounted = false;
+    			dispose();
     		}
     	};
 
@@ -5419,7 +5451,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(43:4) {#each verbs as verb}",
+    		source: "(33:4) {#each verbs as verb}",
     		ctx
     	});
 
@@ -5444,8 +5476,8 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr_dev(ul, "class", "svelte-wu25l2");
-    			add_location(ul, file$1, 41, 0, 793);
+    			attr_dev(ul, "class", "svelte-t0pyk8");
+    			add_location(ul, file$1, 31, 0, 470);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -5458,7 +5490,7 @@ var app = (function () {
     			}
     		},
     		p: function update(ctx, [dirty]) {
-    			if (dirty & /*verbs*/ 1) {
+    			if (dirty & /*verbs, populateMain*/ 3) {
     				each_value = /*verbs*/ ctx[0];
     				validate_each_argument(each_value);
     				let i;
@@ -5504,57 +5536,56 @@ var app = (function () {
     function instance$1($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('Words', slots, []);
-    	let db = new PouchDB('todos');
+    	let { verbs } = $$props;
+    	let { changeGerund } = $$props;
+    	let { changeTrans } = $$props;
 
-    	function addVerb(text) {
-    		var verb = {
-    			_id: new Date().toISOString(),
-    			verb: text
-    		};
-
-    		db.put(verb, function callback(err, result) {
-    			if (!err) {
-    				console.log('Successfully posted a verb!');
-    			}
-    		});
+    	function populateMain(gerund, trans) {
+    		$$invalidate(2, changeGerund = gerund);
+    		$$invalidate(3, changeTrans = trans);
     	}
 
-    	let verbs = [];
-
-    	db.allDocs({ include_docs: true, attachments: true }).then(function (result) {
-    		// handle result
-    		console.log(result);
-
-    		$$invalidate(0, verbs = result["rows"]);
-    	}).catch(function (err) {
-    		console.log(err);
-    	});
-
-    	console.log(verbs);
-    	const writable_props = [];
+    	const writable_props = ['verbs', 'changeGerund', 'changeTrans'];
 
     	Object.keys($$props).forEach(key => {
-    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console_1.warn(`<Words> was created with unknown prop '${key}'`);
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console.warn(`<Words> was created with unknown prop '${key}'`);
     	});
 
-    	$$self.$capture_state = () => ({ db, addVerb, verbs });
+    	$$self.$$set = $$props => {
+    		if ('verbs' in $$props) $$invalidate(0, verbs = $$props.verbs);
+    		if ('changeGerund' in $$props) $$invalidate(2, changeGerund = $$props.changeGerund);
+    		if ('changeTrans' in $$props) $$invalidate(3, changeTrans = $$props.changeTrans);
+    	};
+
+    	$$self.$capture_state = () => ({
+    		verbs,
+    		changeGerund,
+    		changeTrans,
+    		populateMain
+    	});
 
     	$$self.$inject_state = $$props => {
-    		if ('db' in $$props) db = $$props.db;
     		if ('verbs' in $$props) $$invalidate(0, verbs = $$props.verbs);
+    		if ('changeGerund' in $$props) $$invalidate(2, changeGerund = $$props.changeGerund);
+    		if ('changeTrans' in $$props) $$invalidate(3, changeTrans = $$props.changeTrans);
     	};
 
     	if ($$props && "$$inject" in $$props) {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [verbs];
+    	return [verbs, populateMain, changeGerund, changeTrans];
     }
 
     class Words extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$1, create_fragment$1, safe_not_equal, {});
+
+    		init(this, options, instance$1, create_fragment$1, safe_not_equal, {
+    			verbs: 0,
+    			changeGerund: 2,
+    			changeTrans: 3
+    		});
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
@@ -5562,10 +5593,51 @@ var app = (function () {
     			options,
     			id: create_fragment$1.name
     		});
+
+    		const { ctx } = this.$$;
+    		const props = options.props || {};
+
+    		if (/*verbs*/ ctx[0] === undefined && !('verbs' in props)) {
+    			console.warn("<Words> was created without expected prop 'verbs'");
+    		}
+
+    		if (/*changeGerund*/ ctx[2] === undefined && !('changeGerund' in props)) {
+    			console.warn("<Words> was created without expected prop 'changeGerund'");
+    		}
+
+    		if (/*changeTrans*/ ctx[3] === undefined && !('changeTrans' in props)) {
+    			console.warn("<Words> was created without expected prop 'changeTrans'");
+    		}
+    	}
+
+    	get verbs() {
+    		throw new Error("<Words>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set verbs(value) {
+    		throw new Error("<Words>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	get changeGerund() {
+    		throw new Error("<Words>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set changeGerund(value) {
+    		throw new Error("<Words>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	get changeTrans() {
+    		throw new Error("<Words>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set changeTrans(value) {
+    		throw new Error("<Words>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
     	}
     }
 
     /* src/App.svelte generated by Svelte v3.43.0 */
+
+    const { console: console_1 } = globals;
     const file = "src/App.svelte";
 
     function create_fragment(ctx) {
@@ -5577,358 +5649,361 @@ var app = (function () {
     	let t2;
     	let input1;
     	let t3;
-    	let hr0;
-    	let t4;
-    	let quizmodal;
+    	let button;
     	let t5;
-    	let hr1;
+    	let hr0;
     	let t6;
+    	let quizmodal;
+    	let t7;
+    	let hr1;
+    	let t8;
     	let article0;
     	let small0;
-    	let t7;
-    	let t8;
     	let t9;
-    	let p0;
     	let t10;
-    	let b0;
     	let t11;
+    	let p0;
     	let t12;
+    	let b0;
     	let t13;
-    	let hr2;
     	let t14;
+    	let t15;
+    	let hr2;
+    	let t16;
     	let article1;
     	let small1;
-    	let t15;
-    	let t16;
     	let t17;
+    	let t18;
+    	let t19;
+    	let t20;
     	let p1;
     	let u0;
-    	let t19;
-    	let b1;
-    	let t20;
-    	let t21;
     	let t22;
-    	let hr3;
+    	let b1;
     	let t23;
-    	let article2;
-    	let small2;
     	let t24;
     	let t25;
+    	let hr3;
     	let t26;
+    	let article2;
+    	let small2;
     	let t27;
-    	let p2;
     	let t28;
-    	let b2;
     	let t29;
     	let t30;
+    	let p2;
     	let t31;
-    	let hr4;
+    	let b2;
     	let t32;
-    	let article3;
-    	let small3;
     	let t33;
     	let t34;
+    	let hr4;
     	let t35;
+    	let article3;
+    	let small3;
     	let t36;
-    	let p3;
     	let t37;
-    	let b3;
     	let t38;
     	let t39;
+    	let p3;
     	let t40;
-    	let hr5;
+    	let b3;
     	let t41;
-    	let article4;
-    	let small4;
     	let t42;
     	let t43;
+    	let hr5;
     	let t44;
-    	let p4;
+    	let article4;
+    	let small4;
     	let t45;
-    	let b4;
     	let t46;
     	let t47;
+    	let p4;
     	let t48;
-    	let hr6;
+    	let b4;
     	let t49;
-    	let article5;
-    	let small5;
     	let t50;
     	let t51;
+    	let hr6;
     	let t52;
-    	let p5;
-    	let u1;
+    	let article5;
+    	let small5;
+    	let t53;
     	let t54;
-    	let b5;
     	let t55;
     	let t56;
-    	let t57;
-    	let hr7;
+    	let p5;
+    	let u1;
     	let t58;
-    	let article6;
-    	let small6;
+    	let b5;
     	let t59;
     	let t60;
     	let t61;
+    	let hr7;
     	let t62;
-    	let p6;
+    	let article6;
+    	let small6;
     	let t63;
-    	let b6;
     	let t64;
     	let t65;
     	let t66;
-    	let hr8;
+    	let p6;
     	let t67;
-    	let article7;
-    	let small7;
+    	let b6;
     	let t68;
     	let t69;
     	let t70;
+    	let hr8;
     	let t71;
-    	let p7;
+    	let article7;
+    	let small7;
     	let t72;
-    	let b7;
     	let t73;
     	let t74;
     	let t75;
-    	let hr9;
+    	let p7;
     	let t76;
-    	let article8;
-    	let small8;
+    	let b7;
     	let t77;
     	let t78;
     	let t79;
+    	let hr9;
     	let t80;
-    	let p8;
+    	let article8;
+    	let small8;
     	let t81;
-    	let b8;
     	let t82;
     	let t83;
+    	let p8;
     	let t84;
-    	let hr10;
+    	let b8;
     	let t85;
-    	let article9;
-    	let small9;
     	let t86;
     	let t87;
+    	let hr10;
     	let t88;
+    	let article9;
+    	let small9;
     	let t89;
+    	let t90;
+    	let t91;
+    	let t92;
     	let p9;
     	let u2;
-    	let t91;
-    	let b9;
-    	let t92;
-    	let t93;
     	let t94;
-    	let hr11;
+    	let b9;
     	let t95;
+    	let t96;
+    	let t97;
+    	let hr11;
+    	let t98;
     	let article10;
     	let small10;
-    	let t96;
-    	let t97_value = /*trans*/ ctx[1].split("ing")[0] + "";
-    	let t97;
-    	let t98;
     	let t99;
-    	let p10;
+    	let t100_value = /*trans*/ ctx[1].split("ing")[0] + "";
     	let t100;
-    	let b10;
     	let t101;
+    	let p10;
     	let t102;
+    	let b10;
     	let t103;
-    	let hr12;
     	let t104;
+    	let t105;
+    	let hr12;
+    	let t106;
     	let article11;
     	let small11;
-    	let t105;
-    	let t106_value = /*trans*/ ctx[1].split("ing")[0] + "";
-    	let t106;
     	let t107;
+    	let t108_value = /*trans*/ ctx[1].split("ing")[0] + "";
+    	let t108;
+    	let t109;
     	let p11;
     	let u3;
-    	let t109;
-    	let b11;
-    	let t110;
     	let t111;
+    	let b11;
     	let t112;
-    	let hr13;
     	let t113;
+    	let t114;
+    	let hr13;
+    	let t115;
     	let article12;
     	let small12;
-    	let t114;
-    	let t115_value = /*trans*/ ctx[1].split("ing")[0] + "";
-    	let t115;
     	let t116;
-    	let p12;
+    	let t117_value = /*trans*/ ctx[1].split("ing")[0] + "";
     	let t117;
-    	let b12;
     	let t118;
+    	let p12;
     	let t119;
+    	let b12;
     	let t120;
-    	let hr14;
     	let t121;
+    	let t122;
+    	let hr14;
+    	let t123;
     	let article13;
     	let small13;
-    	let t122;
-    	let t123_value = /*trans*/ ctx[1].split("ing")[0] + "";
-    	let t123;
     	let t124;
+    	let t125_value = /*trans*/ ctx[1].split("ing")[0] + "";
+    	let t125;
+    	let t126;
     	let p13;
     	let u4;
-    	let t126;
-    	let b13;
-    	let t127;
     	let t128;
+    	let b13;
     	let t129;
-    	let hr15;
     	let t130;
+    	let t131;
+    	let hr15;
+    	let t132;
     	let article14;
     	let small14;
-    	let t131;
-    	let t132_value = /*trans*/ ctx[1].split("ing")[0] + "";
-    	let t132;
     	let t133;
+    	let t134_value = /*trans*/ ctx[1].split("ing")[0] + "";
     	let t134;
-    	let p14;
     	let t135;
-    	let b14;
+    	let p14;
     	let t136;
+    	let b14;
     	let t137;
     	let t138;
-    	let hr16;
     	let t139;
+    	let hr16;
+    	let t140;
     	let article15;
     	let small15;
-    	let t140;
-    	let t141_value = /*trans*/ ctx[1].split("ing")[0] + "";
     	let t141;
+    	let t142_value = /*trans*/ ctx[1].split("ing")[0] + "";
     	let t142;
     	let t143;
+    	let t144;
     	let p15;
     	let u5;
-    	let t145;
-    	let b15;
     	let t146;
+    	let b15;
     	let t147;
     	let t148;
-    	let hr17;
     	let t149;
+    	let hr17;
+    	let t150;
     	let article16;
     	let small16;
-    	let t150_value = /*trans*/ ctx[1].split("ing")[0] + "";
-    	let t150;
+    	let t151_value = /*trans*/ ctx[1].split("ing")[0] + "";
     	let t151;
     	let t152;
+    	let t153;
     	let p16;
     	let b16;
-    	let t153;
     	let t154;
     	let t155;
-    	let hr18;
     	let t156;
+    	let hr18;
+    	let t157;
     	let article17;
     	let small17;
-    	let t157;
-    	let t158_value = /*trans*/ ctx[1].split("ing")[0] + "";
     	let t158;
+    	let t159_value = /*trans*/ ctx[1].split("ing")[0] + "";
     	let t159;
     	let t160;
+    	let t161;
     	let p17;
     	let b17;
-    	let t161;
     	let t162;
     	let t163;
-    	let hr19;
     	let t164;
+    	let hr19;
+    	let t165;
     	let article18;
     	let small18;
-    	let t165_value = /*trans*/ ctx[1].split("ing")[0] + "";
-    	let t165;
+    	let t166_value = /*trans*/ ctx[1].split("ing")[0] + "";
     	let t166;
     	let t167;
+    	let t168;
     	let p18;
     	let b18;
-    	let t168;
     	let t169;
     	let t170;
-    	let hr20;
     	let t171;
+    	let hr20;
+    	let t172;
     	let article19;
     	let small19;
-    	let t172;
-    	let t173_value = /*trans*/ ctx[1].split("ing")[0] + "";
     	let t173;
+    	let t174_value = /*trans*/ ctx[1].split("ing")[0] + "";
     	let t174;
     	let t175;
+    	let t176;
     	let p19;
     	let b19;
-    	let t176;
     	let t177;
     	let t178;
-    	let hr21;
     	let t179;
+    	let hr21;
+    	let t180;
     	let article20;
     	let small20;
-    	let t180;
-    	let t181_value = /*trans*/ ctx[1].split("ing")[0] + "";
     	let t181;
+    	let t182_value = /*trans*/ ctx[1].split("ing")[0] + "";
     	let t182;
     	let t183;
-    	let p20;
     	let t184;
-    	let b20;
+    	let p20;
     	let t185;
+    	let b20;
     	let t186;
     	let t187;
-    	let hr22;
     	let t188;
+    	let hr22;
+    	let t189;
     	let article21;
     	let small21;
-    	let t189;
-    	let t190_value = /*trans*/ ctx[1].split("ing")[0] + "";
     	let t190;
+    	let t191_value = /*trans*/ ctx[1].split("ing")[0] + "";
     	let t191;
     	let t192;
-    	let p21;
     	let t193;
-    	let b21;
+    	let p21;
     	let t194;
+    	let b21;
     	let t195;
     	let t196;
-    	let hr23;
     	let t197;
+    	let hr23;
+    	let t198;
     	let article22;
     	let small22;
-    	let t198;
-    	let t199_value = /*trans*/ ctx[1].split("ing")[0] + "";
     	let t199;
+    	let t200_value = /*trans*/ ctx[1].split("ing")[0] + "";
     	let t200;
     	let t201;
-    	let p22;
     	let t202;
-    	let b22;
+    	let p22;
     	let t203;
+    	let b22;
     	let t204;
     	let t205;
-    	let hr24;
     	let t206;
+    	let hr24;
+    	let t207;
     	let article23;
     	let small23;
-    	let t207;
-    	let t208_value = /*trans*/ ctx[1].split("ing")[0] + "";
     	let t208;
+    	let t209_value = /*trans*/ ctx[1].split("ing")[0] + "";
     	let t209;
     	let t210;
-    	let p23;
     	let t211;
-    	let b23;
+    	let p23;
     	let t212;
+    	let b23;
     	let t213;
     	let t214;
-    	let hr25;
     	let t215;
-    	let br;
+    	let hr25;
     	let t216;
+    	let br;
+    	let t217;
     	let words;
+    	let updating_changeGerund;
+    	let updating_changeTrans;
     	let current;
     	let mounted;
     	let dispose;
@@ -5941,7 +6016,27 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	words = new Words({ $$inline: true });
+    	function words_changeGerund_binding(value) {
+    		/*words_changeGerund_binding*/ ctx[7](value);
+    	}
+
+    	function words_changeTrans_binding(value) {
+    		/*words_changeTrans_binding*/ ctx[8](value);
+    	}
+
+    	let words_props = { verbs: /*verbs*/ ctx[2] };
+
+    	if (/*gerund*/ ctx[0] !== void 0) {
+    		words_props.changeGerund = /*gerund*/ ctx[0];
+    	}
+
+    	if (/*trans*/ ctx[1] !== void 0) {
+    		words_props.changeTrans = /*trans*/ ctx[1];
+    	}
+
+    	words = new Words({ props: words_props, $$inline: true });
+    	binding_callbacks.push(() => bind(words, 'changeGerund', words_changeGerund_binding));
+    	binding_callbacks.push(() => bind(words, 'changeTrans', words_changeTrans_binding));
 
     	const block = {
     		c: function create() {
@@ -5954,543 +6049,562 @@ var app = (function () {
     			t2 = space();
     			input1 = element("input");
     			t3 = space();
-    			hr0 = element("hr");
-    			t4 = space();
-    			create_component(quizmodal.$$.fragment);
+    			button = element("button");
+    			button.textContent = "+";
     			t5 = space();
-    			hr1 = element("hr");
+    			hr0 = element("hr");
     			t6 = space();
+    			create_component(quizmodal.$$.fragment);
+    			t7 = space();
+    			hr1 = element("hr");
+    			t8 = space();
     			article0 = element("article");
     			small0 = element("small");
-    			t7 = text("I'm ");
-    			t8 = text(/*trans*/ ctx[1]);
-    			t9 = space();
+    			t9 = text("I'm ");
+    			t10 = text(/*trans*/ ctx[1]);
+    			t11 = space();
     			p0 = element("p");
-    			t10 = text("Mein ");
+    			t12 = text("Mein ");
     			b0 = element("b");
-    			t11 = text(/*bones*/ ctx[2]);
-    			t12 = text("rahaa hun");
-    			t13 = space();
+    			t13 = text(/*bones*/ ctx[3]);
+    			t14 = text("rahaa hun");
+    			t15 = space();
     			hr2 = element("hr");
-    			t14 = space();
+    			t16 = space();
     			article1 = element("article");
     			small1 = element("small");
-    			t15 = text("He is  ");
-    			t16 = text(/*trans*/ ctx[1]);
-    			t17 = space();
+    			t17 = text("He is  ");
+    			t18 = text(/*trans*/ ctx[1]);
+    			t19 = text(" 🧢");
+    			t20 = space();
     			p1 = element("p");
     			u0 = element("u");
     			u0.textContent = "Woh";
-    			t19 = space();
-    			b1 = element("b");
-    			t20 = text(/*bones*/ ctx[2]);
-    			t21 = text("rahaa he");
     			t22 = space();
+    			b1 = element("b");
+    			t23 = text(/*bones*/ ctx[3]);
+    			t24 = text("rahaa he");
+    			t25 = space();
     			hr3 = element("hr");
-    			t23 = space();
+    			t26 = space();
     			article2 = element("article");
     			small2 = element("small");
-    			t24 = text("You are ");
-    			t25 = text(/*trans*/ ctx[1]);
-    			t26 = text(" (informal)");
-    			t27 = space();
+    			t27 = text("You are ");
+    			t28 = text(/*trans*/ ctx[1]);
+    			t29 = text(" 🧢");
+    			t30 = space();
     			p2 = element("p");
-    			t28 = text("Tum ");
+    			t31 = text("Tum ");
     			b2 = element("b");
-    			t29 = text(/*bones*/ ctx[2]);
-    			t30 = text("rahey ho");
-    			t31 = space();
+    			t32 = text(/*bones*/ ctx[3]);
+    			t33 = text("rahey ho");
+    			t34 = space();
     			hr4 = element("hr");
-    			t32 = space();
+    			t35 = space();
     			article3 = element("article");
     			small3 = element("small");
-    			t33 = text("You are ");
-    			t34 = text(/*trans*/ ctx[1]);
-    			t35 = text(" (formal)");
-    			t36 = space();
+    			t36 = text("You are ");
+    			t37 = text(/*trans*/ ctx[1]);
+    			t38 = text(" 🎩");
+    			t39 = space();
     			p3 = element("p");
-    			t37 = text("Aap ");
+    			t40 = text("Aap ");
     			b3 = element("b");
-    			t38 = text(/*bones*/ ctx[2]);
-    			t39 = text("rahey hein");
-    			t40 = space();
+    			t41 = text(/*bones*/ ctx[3]);
+    			t42 = text("rahey hein");
+    			t43 = space();
     			hr5 = element("hr");
-    			t41 = space();
+    			t44 = space();
     			article4 = element("article");
     			small4 = element("small");
-    			t42 = text("I'm ");
-    			t43 = text(/*trans*/ ctx[1]);
-    			t44 = space();
+    			t45 = text("I'm ");
+    			t46 = text(/*trans*/ ctx[1]);
+    			t47 = space();
     			p4 = element("p");
-    			t45 = text("Mein ");
+    			t48 = text("Mein ");
     			b4 = element("b");
-    			t46 = text(/*bones*/ ctx[2]);
-    			t47 = text("rahee hun");
-    			t48 = space();
+    			t49 = text(/*bones*/ ctx[3]);
+    			t50 = text("rahee hun");
+    			t51 = space();
     			hr6 = element("hr");
-    			t49 = space();
+    			t52 = space();
     			article5 = element("article");
     			small5 = element("small");
-    			t50 = text("She is ");
-    			t51 = text(/*trans*/ ctx[1]);
-    			t52 = space();
+    			t53 = text("She is ");
+    			t54 = text(/*trans*/ ctx[1]);
+    			t55 = text(" 🧢");
+    			t56 = space();
     			p5 = element("p");
     			u1 = element("u");
     			u1.textContent = "Woh";
-    			t54 = space();
-    			b5 = element("b");
-    			t55 = text(/*bones*/ ctx[2]);
-    			t56 = text("rahee he");
-    			t57 = space();
-    			hr7 = element("hr");
     			t58 = space();
+    			b5 = element("b");
+    			t59 = text(/*bones*/ ctx[3]);
+    			t60 = text("rahee he");
+    			t61 = space();
+    			hr7 = element("hr");
+    			t62 = space();
     			article6 = element("article");
     			small6 = element("small");
-    			t59 = text("You are ");
-    			t60 = text(/*trans*/ ctx[1]);
-    			t61 = text(" (informal)");
-    			t62 = space();
-    			p6 = element("p");
-    			t63 = text("Tum ");
-    			b6 = element("b");
-    			t64 = text(/*bones*/ ctx[2]);
-    			t65 = text("rahee ho");
+    			t63 = text("You are ");
+    			t64 = text(/*trans*/ ctx[1]);
+    			t65 = text(" 🧢");
     			t66 = space();
+    			p6 = element("p");
+    			t67 = text("Tum ");
+    			b6 = element("b");
+    			t68 = text(/*bones*/ ctx[3]);
+    			t69 = text("rahee ho");
+    			t70 = space();
     			hr8 = element("hr");
-    			t67 = space();
+    			t71 = space();
     			article7 = element("article");
     			small7 = element("small");
-    			t68 = text("You are ");
-    			t69 = text(/*trans*/ ctx[1]);
-    			t70 = text(" (formal)");
-    			t71 = space();
-    			p7 = element("p");
-    			t72 = text("Aap ");
-    			b7 = element("b");
-    			t73 = text(/*bones*/ ctx[2]);
-    			t74 = text("raheen hein");
+    			t72 = text("You are ");
+    			t73 = text(/*trans*/ ctx[1]);
+    			t74 = text(" 🎩");
     			t75 = space();
+    			p7 = element("p");
+    			t76 = text("Aap ");
+    			b7 = element("b");
+    			t77 = text(/*bones*/ ctx[3]);
+    			t78 = text("raheen hein");
+    			t79 = space();
     			hr9 = element("hr");
-    			t76 = space();
+    			t80 = space();
     			article8 = element("article");
     			small8 = element("small");
-    			t77 = text("We're ");
-    			t78 = text(/*trans*/ ctx[1]);
-    			t79 = text(" (neutral)");
-    			t80 = space();
+    			t81 = text("We're ");
+    			t82 = text(/*trans*/ ctx[1]);
+    			t83 = space();
     			p8 = element("p");
-    			t81 = text("Hum ");
+    			t84 = text("Hum ");
     			b8 = element("b");
-    			t82 = text(/*bones*/ ctx[2]);
-    			t83 = text("rahey hein");
-    			t84 = space();
+    			t85 = text(/*bones*/ ctx[3]);
+    			t86 = text("rahey hein");
+    			t87 = space();
     			hr10 = element("hr");
-    			t85 = space();
+    			t88 = space();
     			article9 = element("article");
     			small9 = element("small");
-    			t86 = text("They're ");
-    			t87 = text(/*trans*/ ctx[1]);
-    			t88 = text(" (they/formal neutral)");
-    			t89 = space();
+    			t89 = text("They're ");
+    			t90 = text(/*trans*/ ctx[1]);
+    			t91 = text(" (they/formal)");
+    			t92 = space();
     			p9 = element("p");
     			u2 = element("u");
     			u2.textContent = "Woh";
-    			t91 = space();
-    			b9 = element("b");
-    			t92 = text(/*bones*/ ctx[2]);
-    			t93 = text("rahey hein");
     			t94 = space();
+    			b9 = element("b");
+    			t95 = text(/*bones*/ ctx[3]);
+    			t96 = text("rahey hein");
+    			t97 = space();
     			hr11 = element("hr");
-    			t95 = space();
+    			t98 = space();
     			article10 = element("article");
     			small10 = element("small");
-    			t96 = text("I will ");
-    			t97 = text(t97_value);
-    			t98 = text(" (1stp)");
-    			t99 = space();
+    			t99 = text("I will ");
+    			t100 = text(t100_value);
+    			t101 = space();
     			p10 = element("p");
-    			t100 = text("Mein ");
+    			t102 = text("Mein ");
     			b10 = element("b");
-    			t101 = text(/*bones*/ ctx[2]);
-    			t102 = text("unga");
-    			t103 = space();
+    			t103 = text(/*bones*/ ctx[3]);
+    			t104 = text("unga");
+    			t105 = space();
     			hr12 = element("hr");
-    			t104 = space();
+    			t106 = space();
     			article11 = element("article");
     			small11 = element("small");
-    			t105 = text("He will ");
-    			t106 = text(t106_value);
-    			t107 = space();
+    			t107 = text("He will ");
+    			t108 = text(t108_value);
+    			t109 = space();
     			p11 = element("p");
     			u3 = element("u");
     			u3.textContent = "Woh";
-    			t109 = space();
+    			t111 = space();
     			b11 = element("b");
-    			t110 = text(/*bones*/ ctx[2]);
-    			t111 = text("eyga");
-    			t112 = space();
+    			t112 = text(/*bones*/ ctx[3]);
+    			t113 = text("eyga");
+    			t114 = space();
     			hr13 = element("hr");
-    			t113 = space();
+    			t115 = space();
     			article12 = element("article");
     			small12 = element("small");
-    			t114 = text("I will ");
-    			t115 = text(t115_value);
-    			t116 = space();
+    			t116 = text("I will ");
+    			t117 = text(t117_value);
+    			t118 = space();
     			p12 = element("p");
-    			t117 = text("Mein ");
+    			t119 = text("Mein ");
     			b12 = element("b");
-    			t118 = text(/*bones*/ ctx[2]);
-    			t119 = text("ungi");
-    			t120 = space();
+    			t120 = text(/*bones*/ ctx[3]);
+    			t121 = text("ungi");
+    			t122 = space();
     			hr14 = element("hr");
-    			t121 = space();
+    			t123 = space();
     			article13 = element("article");
     			small13 = element("small");
-    			t122 = text("She will ");
-    			t123 = text(t123_value);
-    			t124 = space();
+    			t124 = text("She will ");
+    			t125 = text(t125_value);
+    			t126 = space();
     			p13 = element("p");
     			u4 = element("u");
     			u4.textContent = "Woh";
-    			t126 = space();
+    			t128 = space();
     			b13 = element("b");
-    			t127 = text(/*bones*/ ctx[2]);
-    			t128 = text("eygi");
-    			t129 = space();
+    			t129 = text(/*bones*/ ctx[3]);
+    			t130 = text("eygi");
+    			t131 = space();
     			hr15 = element("hr");
-    			t130 = space();
+    			t132 = space();
     			article14 = element("article");
     			small14 = element("small");
-    			t131 = text("We will ");
-    			t132 = text(t132_value);
-    			t133 = text(" (neutral)");
-    			t134 = space();
+    			t133 = text("We will ");
+    			t134 = text(t134_value);
+    			t135 = space();
     			p14 = element("p");
-    			t135 = text("Hum ");
+    			t136 = text("Hum ");
     			b14 = element("b");
-    			t136 = text(/*bones*/ ctx[2]);
-    			t137 = text("eingay");
-    			t138 = space();
-    			hr16 = element("hr");
+    			t137 = text(/*bones*/ ctx[3]);
+    			t138 = text("eingay");
     			t139 = space();
+    			hr16 = element("hr");
+    			t140 = space();
     			article15 = element("article");
     			small15 = element("small");
-    			t140 = text("They/He will ");
-    			t141 = text(t141_value);
-    			t142 = text(" (they/formal neutral)");
-    			t143 = space();
+    			t141 = text("They/He will ");
+    			t142 = text(t142_value);
+    			t143 = text(" (they/🎩)");
+    			t144 = space();
     			p15 = element("p");
     			u5 = element("u");
     			u5.textContent = "Woh";
-    			t145 = space();
+    			t146 = space();
     			b15 = element("b");
-    			t146 = text(/*bones*/ ctx[2]);
-    			t147 = text("eingay");
-    			t148 = space();
-    			hr17 = element("hr");
+    			t147 = text(/*bones*/ ctx[3]);
+    			t148 = text("eingay");
     			t149 = space();
+    			hr17 = element("hr");
+    			t150 = space();
     			article16 = element("article");
     			small16 = element("small");
-    			t150 = text(t150_value);
-    			t151 = text("! (informal neutral)");
-    			t152 = space();
+    			t151 = text(t151_value);
+    			t152 = text("! 🧢");
+    			t153 = space();
     			p16 = element("p");
     			b16 = element("b");
-    			t153 = text(/*bones*/ ctx[2]);
-    			t154 = text("o!");
-    			t155 = space();
-    			hr18 = element("hr");
+    			t154 = text(/*bones*/ ctx[3]);
+    			t155 = text("o!");
     			t156 = space();
+    			hr18 = element("hr");
+    			t157 = space();
     			article17 = element("article");
     			small17 = element("small");
-    			t157 = text("Please ");
-    			t158 = text(t158_value);
-    			t159 = text("! (informal neutral)");
-    			t160 = space();
+    			t158 = text("Please ");
+    			t159 = text(t159_value);
+    			t160 = text("! 🧢");
+    			t161 = space();
     			p17 = element("p");
     			b17 = element("b");
-    			t161 = text(/*bones*/ ctx[2]);
-    			t162 = text("ein!");
-    			t163 = space();
-    			hr19 = element("hr");
+    			t162 = text(/*bones*/ ctx[3]);
+    			t163 = text("ein!");
     			t164 = space();
+    			hr19 = element("hr");
+    			t165 = space();
     			article18 = element("article");
     			small18 = element("small");
-    			t165 = text(t165_value);
-    			t166 = text("! (formal neutral)");
-    			t167 = space();
+    			t166 = text(t166_value);
+    			t167 = text("! 🎩");
+    			t168 = space();
     			p18 = element("p");
     			b18 = element("b");
-    			t168 = text(/*bones*/ ctx[2]);
-    			t169 = text("ein!");
-    			t170 = space();
-    			hr20 = element("hr");
+    			t169 = text(/*bones*/ ctx[3]);
+    			t170 = text("ein!");
     			t171 = space();
+    			hr20 = element("hr");
+    			t172 = space();
     			article19 = element("article");
     			small19 = element("small");
-    			t172 = text("Please ");
-    			t173 = text(t173_value);
-    			t174 = text("! (formal neutral)");
-    			t175 = space();
+    			t173 = text("Please ");
+    			t174 = text(t174_value);
+    			t175 = text("! 🎩");
+    			t176 = space();
     			p19 = element("p");
     			b19 = element("b");
-    			t176 = text(/*bones*/ ctx[2]);
-    			t177 = text("ein!");
-    			t178 = space();
-    			hr21 = element("hr");
+    			t177 = text(/*bones*/ ctx[3]);
+    			t178 = text("ein!");
     			t179 = space();
+    			hr21 = element("hr");
+    			t180 = space();
     			article20 = element("article");
     			small20 = element("small");
-    			t180 = text("Will you ");
-    			t181 = text(t181_value);
-    			t182 = text("? (informal)");
-    			t183 = space();
+    			t181 = text("Will you ");
+    			t182 = text(t182_value);
+    			t183 = text("? 🧢");
+    			t184 = space();
     			p20 = element("p");
-    			t184 = text("Tum ");
+    			t185 = text("Tum ");
     			b20 = element("b");
-    			t185 = text(/*bones*/ ctx[2]);
-    			t186 = text("ogay?");
-    			t187 = space();
-    			hr22 = element("hr");
+    			t186 = text(/*bones*/ ctx[3]);
+    			t187 = text("ogay?");
     			t188 = space();
+    			hr22 = element("hr");
+    			t189 = space();
     			article21 = element("article");
     			small21 = element("small");
-    			t189 = text("Will you ");
-    			t190 = text(t190_value);
-    			t191 = text("? (formal)");
-    			t192 = space();
+    			t190 = text("Will you ");
+    			t191 = text(t191_value);
+    			t192 = text("? 🎩");
+    			t193 = space();
     			p21 = element("p");
-    			t193 = text("Aap ");
+    			t194 = text("Aap ");
     			b21 = element("b");
-    			t194 = text(/*bones*/ ctx[2]);
-    			t195 = text("eingey?");
-    			t196 = space();
-    			hr23 = element("hr");
+    			t195 = text(/*bones*/ ctx[3]);
+    			t196 = text("eingey?");
     			t197 = space();
+    			hr23 = element("hr");
+    			t198 = space();
     			article22 = element("article");
     			small22 = element("small");
-    			t198 = text("Will you ");
-    			t199 = text(t199_value);
-    			t200 = text("? (informal)");
-    			t201 = space();
+    			t199 = text("Will you ");
+    			t200 = text(t200_value);
+    			t201 = text("? 🧢");
+    			t202 = space();
     			p22 = element("p");
-    			t202 = text("Tum ");
+    			t203 = text("Tum ");
     			b22 = element("b");
-    			t203 = text(/*bones*/ ctx[2]);
-    			t204 = text("ogi?");
-    			t205 = space();
-    			hr24 = element("hr");
+    			t204 = text(/*bones*/ ctx[3]);
+    			t205 = text("ogi?");
     			t206 = space();
+    			hr24 = element("hr");
+    			t207 = space();
     			article23 = element("article");
     			small23 = element("small");
-    			t207 = text("Will you ");
-    			t208 = text(t208_value);
-    			t209 = text("? (formal)");
-    			t210 = space();
+    			t208 = text("Will you ");
+    			t209 = text(t209_value);
+    			t210 = text("? 🎩");
+    			t211 = space();
     			p23 = element("p");
-    			t211 = text("Aap ");
+    			t212 = text("Aap ");
     			b23 = element("b");
-    			t212 = text(/*bones*/ ctx[2]);
-    			t213 = text("eingee?");
-    			t214 = space();
-    			hr25 = element("hr");
+    			t213 = text(/*bones*/ ctx[3]);
+    			t214 = text("eingee?");
     			t215 = space();
-    			br = element("br");
+    			hr25 = element("hr");
     			t216 = space();
+    			br = element("br");
+    			t217 = space();
     			create_component(words.$$.fragment);
     			attr_dev(label, "for", "gerund");
-    			add_location(label, file, 53, 4, 881);
+    			add_location(label, file, 92, 4, 1681);
     			attr_dev(input0, "type", "text");
     			attr_dev(input0, "id", "gerund");
     			attr_dev(input0, "placeholder", "Gerund");
-    			add_location(input0, file, 54, 4, 920);
+    			add_location(input0, file, 93, 4, 1720);
     			attr_dev(input1, "type", "text");
     			attr_dev(input1, "id", "trans");
     			attr_dev(input1, "placeholder", "Translation");
-    			add_location(input1, file, 55, 4, 999);
+    			add_location(input1, file, 94, 4, 1799);
+    			attr_dev(button, "class", "btn-info");
+    			add_location(button, file, 95, 4, 1883);
     			attr_dev(div0, "class", "form-control");
-    			add_location(div0, file, 52, 2, 850);
-    			add_location(hr0, file, 58, 2, 1091);
-    			add_location(hr1, file, 61, 2, 1159);
-    			attr_dev(small0, "class", "svelte-azb90x");
-    			add_location(small0, file, 64, 2, 1204);
-    			add_location(b0, file, 65, 10, 1241);
-    			add_location(p0, file, 65, 2, 1233);
-    			add_location(hr2, file, 66, 2, 1272);
-    			attr_dev(article0, "class", "masc svelte-azb90x");
+    			add_location(div0, file, 91, 2, 1650);
+    			add_location(hr0, file, 98, 2, 1952);
+    			add_location(hr1, file, 101, 2, 2020);
+    			attr_dev(small0, "class", "svelte-1pfw7it");
+    			add_location(small0, file, 104, 2, 2065);
+    			add_location(b0, file, 105, 10, 2102);
+    			add_location(p0, file, 105, 2, 2094);
+    			add_location(hr2, file, 106, 2, 2133);
+    			attr_dev(article0, "class", "masc svelte-1pfw7it");
     			attr_dev(article0, "gender", "masc");
-    			add_location(article0, file, 63, 0, 1165);
-    			attr_dev(small1, "class", "svelte-azb90x");
-    			add_location(small1, file, 70, 2, 1328);
-    			add_location(u0, file, 71, 5, 1364);
-    			add_location(b1, file, 71, 16, 1375);
-    			add_location(p1, file, 71, 2, 1361);
-    			add_location(hr3, file, 72, 2, 1405);
-    			attr_dev(article1, "class", "masc svelte-azb90x");
+    			add_location(article0, file, 103, 0, 2026);
+    			attr_dev(small1, "class", "svelte-1pfw7it");
+    			add_location(small1, file, 110, 2, 2189);
+    			add_location(u0, file, 111, 5, 2227);
+    			add_location(b1, file, 111, 16, 2238);
+    			add_location(p1, file, 111, 2, 2224);
+    			add_location(hr3, file, 112, 2, 2268);
+    			attr_dev(article1, "class", "masc svelte-1pfw7it");
     			attr_dev(article1, "gender", "masc");
-    			add_location(article1, file, 69, 0, 1289);
-    			attr_dev(small2, "class", "svelte-azb90x");
-    			add_location(small2, file, 76, 2, 1461);
-    			add_location(b2, file, 77, 9, 1513);
-    			add_location(p2, file, 77, 2, 1506);
-    			add_location(hr4, file, 78, 2, 1543);
-    			attr_dev(article2, "class", "masc svelte-azb90x");
+    			add_location(article1, file, 109, 0, 2150);
+    			attr_dev(small2, "class", "svelte-1pfw7it");
+    			add_location(small2, file, 116, 2, 2324);
+    			add_location(b2, file, 117, 9, 2368);
+    			add_location(p2, file, 117, 2, 2361);
+    			add_location(hr4, file, 118, 2, 2398);
+    			attr_dev(article2, "class", "masc svelte-1pfw7it");
     			attr_dev(article2, "gender", "masc");
-    			add_location(article2, file, 75, 0, 1422);
-    			attr_dev(small3, "class", "svelte-azb90x");
-    			add_location(small3, file, 83, 2, 1600);
-    			add_location(b3, file, 84, 9, 1650);
-    			add_location(p3, file, 84, 2, 1643);
-    			add_location(hr5, file, 85, 2, 1682);
-    			attr_dev(article3, "class", "masc svelte-azb90x");
+    			add_location(article2, file, 115, 0, 2285);
+    			attr_dev(small3, "class", "svelte-1pfw7it");
+    			add_location(small3, file, 123, 2, 2455);
+    			add_location(b3, file, 124, 9, 2499);
+    			add_location(p3, file, 124, 2, 2492);
+    			add_location(hr5, file, 125, 2, 2531);
+    			attr_dev(article3, "class", "masc svelte-1pfw7it");
     			attr_dev(article3, "gender", "masc");
-    			add_location(article3, file, 82, 0, 1561);
-    			attr_dev(small4, "class", "svelte-azb90x");
-    			add_location(small4, file, 90, 2, 1737);
-    			add_location(b4, file, 91, 10, 1774);
-    			add_location(p4, file, 91, 2, 1766);
-    			add_location(hr6, file, 92, 2, 1805);
-    			attr_dev(article4, "class", "fem svelte-azb90x");
+    			add_location(article3, file, 122, 0, 2416);
+    			attr_dev(small4, "class", "svelte-1pfw7it");
+    			add_location(small4, file, 130, 2, 2586);
+    			add_location(b4, file, 131, 10, 2623);
+    			add_location(p4, file, 131, 2, 2615);
+    			add_location(hr6, file, 132, 2, 2654);
+    			attr_dev(article4, "class", "fem svelte-1pfw7it");
     			attr_dev(article4, "gender", "fem");
-    			add_location(article4, file, 89, 0, 1700);
-    			attr_dev(small5, "class", "svelte-azb90x");
-    			add_location(small5, file, 96, 2, 1859);
-    			add_location(u1, file, 97, 5, 1895);
-    			add_location(b5, file, 97, 16, 1906);
-    			add_location(p5, file, 97, 2, 1892);
-    			add_location(hr7, file, 98, 2, 1936);
-    			attr_dev(article5, "class", "fem svelte-azb90x");
+    			add_location(article4, file, 129, 0, 2549);
+    			attr_dev(small5, "class", "svelte-1pfw7it");
+    			add_location(small5, file, 136, 2, 2708);
+    			add_location(u1, file, 137, 5, 2746);
+    			add_location(b5, file, 137, 16, 2757);
+    			add_location(p5, file, 137, 2, 2743);
+    			add_location(hr7, file, 138, 2, 2787);
+    			attr_dev(article5, "class", "fem svelte-1pfw7it");
     			attr_dev(article5, "gender", "fem");
-    			add_location(article5, file, 95, 0, 1822);
-    			attr_dev(small6, "class", "svelte-azb90x");
-    			add_location(small6, file, 102, 2, 1990);
-    			add_location(b6, file, 103, 9, 2042);
-    			add_location(p6, file, 103, 2, 2035);
-    			add_location(hr8, file, 104, 2, 2072);
-    			attr_dev(article6, "class", "fem svelte-azb90x");
+    			add_location(article5, file, 135, 0, 2671);
+    			attr_dev(small6, "class", "svelte-1pfw7it");
+    			add_location(small6, file, 142, 2, 2841);
+    			add_location(b6, file, 143, 9, 2885);
+    			add_location(p6, file, 143, 2, 2878);
+    			add_location(hr8, file, 144, 2, 2915);
+    			attr_dev(article6, "class", "fem svelte-1pfw7it");
     			attr_dev(article6, "gender", "fem");
-    			add_location(article6, file, 101, 0, 1953);
-    			attr_dev(small7, "class", "svelte-azb90x");
-    			add_location(small7, file, 108, 2, 2126);
-    			add_location(b7, file, 109, 9, 2176);
-    			add_location(p7, file, 109, 2, 2169);
-    			add_location(hr9, file, 110, 2, 2209);
-    			attr_dev(article7, "class", "fem svelte-azb90x");
+    			add_location(article6, file, 141, 0, 2804);
+    			attr_dev(small7, "class", "svelte-1pfw7it");
+    			add_location(small7, file, 148, 2, 2969);
+    			add_location(b7, file, 149, 9, 3013);
+    			add_location(p7, file, 149, 2, 3006);
+    			add_location(hr9, file, 150, 2, 3046);
+    			attr_dev(article7, "class", "fem svelte-1pfw7it");
     			attr_dev(article7, "gender", "fem");
-    			add_location(article7, file, 107, 0, 2089);
-    			attr_dev(small8, "class", "neutral");
-    			add_location(small8, file, 114, 2, 2238);
-    			add_location(b8, file, 115, 9, 2302);
-    			add_location(p8, file, 115, 2, 2295);
-    			add_location(hr10, file, 116, 2, 2334);
-    			add_location(article8, file, 113, 0, 2226);
-    			add_location(small9, file, 121, 2, 2364);
-    			add_location(u2, file, 122, 5, 2422);
-    			add_location(b9, file, 122, 16, 2433);
-    			add_location(p9, file, 122, 2, 2419);
-    			add_location(hr11, file, 123, 2, 2465);
-    			add_location(article9, file, 120, 0, 2352);
-    			attr_dev(small10, "class", "svelte-azb90x");
-    			add_location(small10, file, 128, 2, 2522);
-    			add_location(b10, file, 129, 10, 2585);
-    			add_location(p10, file, 129, 2, 2577);
-    			add_location(hr12, file, 130, 2, 2610);
-    			attr_dev(article10, "class", "masc svelte-azb90x");
+    			add_location(article7, file, 147, 0, 2932);
+    			add_location(small8, file, 154, 2, 3092);
+    			add_location(b8, file, 155, 9, 3130);
+    			add_location(p8, file, 155, 2, 3123);
+    			add_location(hr10, file, 156, 2, 3162);
+    			attr_dev(article8, "gender", "neutral");
+    			attr_dev(article8, "class", "svelte-1pfw7it");
+    			add_location(article8, file, 153, 0, 3063);
+    			add_location(small9, file, 161, 2, 3209);
+    			add_location(u2, file, 162, 5, 3259);
+    			add_location(b9, file, 162, 16, 3270);
+    			add_location(p9, file, 162, 2, 3256);
+    			add_location(hr11, file, 163, 2, 3302);
+    			attr_dev(article9, "gender", "neutral");
+    			attr_dev(article9, "class", "svelte-1pfw7it");
+    			add_location(article9, file, 160, 0, 3180);
+    			attr_dev(small10, "class", "svelte-1pfw7it");
+    			add_location(small10, file, 168, 2, 3359);
+    			add_location(b10, file, 169, 10, 3415);
+    			add_location(p10, file, 169, 2, 3407);
+    			add_location(hr12, file, 170, 2, 3440);
+    			attr_dev(article10, "class", "masc svelte-1pfw7it");
     			attr_dev(article10, "gender", "masc");
-    			add_location(article10, file, 127, 0, 2483);
-    			attr_dev(small11, "class", "svelte-azb90x");
-    			add_location(small11, file, 134, 2, 2666);
-    			add_location(u3, file, 135, 5, 2718);
-    			add_location(b11, file, 135, 16, 2729);
-    			add_location(p11, file, 135, 2, 2715);
-    			add_location(hr13, file, 136, 2, 2754);
-    			attr_dev(article11, "class", "masc svelte-azb90x");
+    			add_location(article10, file, 167, 0, 3320);
+    			attr_dev(small11, "class", "svelte-1pfw7it");
+    			add_location(small11, file, 174, 2, 3496);
+    			add_location(u3, file, 175, 5, 3548);
+    			add_location(b11, file, 175, 16, 3559);
+    			add_location(p11, file, 175, 2, 3545);
+    			add_location(hr13, file, 176, 2, 3584);
+    			attr_dev(article11, "class", "masc svelte-1pfw7it");
     			attr_dev(article11, "gender", "masc");
-    			add_location(article11, file, 133, 0, 2627);
-    			attr_dev(small12, "class", "svelte-azb90x");
-    			add_location(small12, file, 140, 2, 2808);
-    			add_location(b12, file, 141, 10, 2864);
-    			add_location(p12, file, 141, 2, 2856);
-    			add_location(hr14, file, 142, 2, 2889);
-    			attr_dev(article12, "class", "fem svelte-azb90x");
+    			add_location(article11, file, 173, 0, 3457);
+    			attr_dev(small12, "class", "svelte-1pfw7it");
+    			add_location(small12, file, 180, 2, 3638);
+    			add_location(b12, file, 181, 10, 3694);
+    			add_location(p12, file, 181, 2, 3686);
+    			add_location(hr14, file, 182, 2, 3719);
+    			attr_dev(article12, "class", "fem svelte-1pfw7it");
     			attr_dev(article12, "gender", "fem");
-    			add_location(article12, file, 139, 0, 2771);
-    			attr_dev(small13, "class", "svelte-azb90x");
-    			add_location(small13, file, 146, 2, 2943);
-    			add_location(u4, file, 147, 5, 2996);
-    			add_location(b13, file, 147, 16, 3007);
-    			add_location(p13, file, 147, 2, 2993);
-    			add_location(hr15, file, 148, 2, 3032);
-    			attr_dev(article13, "class", "fem svelte-azb90x");
+    			add_location(article12, file, 179, 0, 3601);
+    			attr_dev(small13, "class", "svelte-1pfw7it");
+    			add_location(small13, file, 186, 2, 3773);
+    			add_location(u4, file, 187, 5, 3826);
+    			add_location(b13, file, 187, 16, 3837);
+    			add_location(p13, file, 187, 2, 3823);
+    			add_location(hr15, file, 188, 2, 3862);
+    			attr_dev(article13, "class", "fem svelte-1pfw7it");
     			attr_dev(article13, "gender", "fem");
-    			add_location(article13, file, 145, 0, 2906);
-    			add_location(small14, file, 153, 2, 3062);
-    			add_location(b14, file, 154, 9, 3128);
-    			add_location(p14, file, 154, 2, 3121);
-    			add_location(hr16, file, 155, 2, 3155);
-    			add_location(article14, file, 152, 0, 3050);
-    			add_location(small15, file, 159, 2, 3184);
-    			add_location(u5, file, 160, 5, 3263);
-    			add_location(b15, file, 160, 16, 3274);
-    			add_location(p15, file, 160, 2, 3260);
-    			add_location(hr17, file, 161, 2, 3301);
-    			add_location(article15, file, 158, 0, 3172);
-    			add_location(small16, file, 166, 2, 3331);
-    			add_location(b16, file, 167, 5, 3395);
-    			add_location(p16, file, 167, 2, 3392);
-    			add_location(hr18, file, 168, 2, 3418);
-    			add_location(article16, file, 165, 0, 3319);
-    			add_location(small17, file, 172, 2, 3447);
-    			add_location(b17, file, 173, 5, 3518);
-    			add_location(p17, file, 173, 2, 3515);
-    			add_location(hr19, file, 174, 2, 3543);
-    			add_location(article17, file, 171, 0, 3435);
-    			add_location(small18, file, 178, 2, 3572);
-    			add_location(b18, file, 179, 5, 3634);
-    			add_location(p18, file, 179, 2, 3631);
-    			add_location(hr20, file, 180, 2, 3659);
-    			add_location(article18, file, 177, 0, 3560);
-    			add_location(small19, file, 184, 2, 3688);
-    			add_location(b19, file, 185, 5, 3757);
-    			add_location(p19, file, 185, 2, 3754);
-    			add_location(hr21, file, 186, 2, 3782);
-    			add_location(article19, file, 183, 0, 3676);
-    			attr_dev(small20, "class", "svelte-azb90x");
-    			add_location(small20, file, 190, 2, 3838);
-    			add_location(b20, file, 191, 9, 3907);
-    			add_location(p20, file, 191, 2, 3900);
-    			add_location(hr22, file, 192, 2, 3933);
-    			attr_dev(article20, "class", "masc svelte-azb90x");
+    			add_location(article13, file, 185, 0, 3736);
+    			add_location(small14, file, 193, 2, 3909);
+    			add_location(b14, file, 194, 9, 3965);
+    			add_location(p14, file, 194, 2, 3958);
+    			add_location(hr16, file, 195, 2, 3992);
+    			attr_dev(article14, "gender", "neutral");
+    			attr_dev(article14, "class", "svelte-1pfw7it");
+    			add_location(article14, file, 192, 0, 3880);
+    			add_location(small15, file, 199, 2, 4038);
+    			add_location(u5, file, 200, 5, 4105);
+    			add_location(b15, file, 200, 16, 4116);
+    			add_location(p15, file, 200, 2, 4102);
+    			add_location(hr17, file, 201, 2, 4143);
+    			attr_dev(article15, "gender", "neutral");
+    			attr_dev(article15, "class", "svelte-1pfw7it");
+    			add_location(article15, file, 198, 0, 4009);
+    			add_location(small16, file, 206, 2, 4190);
+    			add_location(b16, file, 207, 5, 4238);
+    			add_location(p16, file, 207, 2, 4235);
+    			add_location(hr18, file, 208, 2, 4261);
+    			attr_dev(article16, "gender", "neutral");
+    			attr_dev(article16, "class", "svelte-1pfw7it");
+    			add_location(article16, file, 205, 0, 4161);
+    			add_location(small17, file, 212, 2, 4307);
+    			add_location(b17, file, 213, 5, 4362);
+    			add_location(p17, file, 213, 2, 4359);
+    			add_location(hr19, file, 214, 2, 4387);
+    			attr_dev(article17, "gender", "neutral");
+    			attr_dev(article17, "class", "svelte-1pfw7it");
+    			add_location(article17, file, 211, 0, 4278);
+    			add_location(small18, file, 218, 2, 4433);
+    			add_location(b18, file, 219, 5, 4481);
+    			add_location(p18, file, 219, 2, 4478);
+    			add_location(hr20, file, 220, 2, 4506);
+    			attr_dev(article18, "gender", "neutral");
+    			attr_dev(article18, "class", "svelte-1pfw7it");
+    			add_location(article18, file, 217, 0, 4404);
+    			add_location(small19, file, 224, 2, 4552);
+    			add_location(b19, file, 225, 5, 4607);
+    			add_location(p19, file, 225, 2, 4604);
+    			add_location(hr21, file, 226, 2, 4632);
+    			attr_dev(article19, "gender", "neutral");
+    			attr_dev(article19, "class", "svelte-1pfw7it");
+    			add_location(article19, file, 223, 0, 4523);
+    			attr_dev(small20, "class", "svelte-1pfw7it");
+    			add_location(small20, file, 230, 2, 4688);
+    			add_location(b20, file, 231, 9, 4749);
+    			add_location(p20, file, 231, 2, 4742);
+    			add_location(hr22, file, 232, 2, 4775);
+    			attr_dev(article20, "class", "masc svelte-1pfw7it");
     			attr_dev(article20, "gender", "masc");
-    			add_location(article20, file, 189, 0, 3799);
-    			attr_dev(small21, "class", "svelte-azb90x");
-    			add_location(small21, file, 196, 2, 3989);
-    			add_location(b21, file, 197, 9, 4056);
-    			add_location(p21, file, 197, 2, 4049);
-    			add_location(hr23, file, 198, 2, 4084);
-    			attr_dev(article21, "class", "masc svelte-azb90x");
+    			add_location(article20, file, 229, 0, 4649);
+    			attr_dev(small21, "class", "svelte-1pfw7it");
+    			add_location(small21, file, 236, 2, 4831);
+    			add_location(b21, file, 237, 9, 4892);
+    			add_location(p21, file, 237, 2, 4885);
+    			add_location(hr23, file, 238, 2, 4920);
+    			attr_dev(article21, "class", "masc svelte-1pfw7it");
     			attr_dev(article21, "gender", "masc");
-    			add_location(article21, file, 195, 0, 3950);
-    			attr_dev(small22, "class", "svelte-azb90x");
-    			add_location(small22, file, 203, 2, 4139);
-    			add_location(b22, file, 204, 9, 4208);
-    			add_location(p22, file, 204, 2, 4201);
-    			add_location(hr24, file, 205, 2, 4233);
-    			attr_dev(article22, "class", "fem svelte-azb90x");
+    			add_location(article21, file, 235, 0, 4792);
+    			attr_dev(small22, "class", "svelte-1pfw7it");
+    			add_location(small22, file, 243, 2, 4975);
+    			add_location(b22, file, 244, 9, 5036);
+    			add_location(p22, file, 244, 2, 5029);
+    			add_location(hr24, file, 245, 2, 5061);
+    			attr_dev(article22, "class", "fem svelte-1pfw7it");
     			attr_dev(article22, "gender", "fem");
-    			add_location(article22, file, 202, 0, 4102);
-    			attr_dev(small23, "class", "svelte-azb90x");
-    			add_location(small23, file, 209, 2, 4287);
-    			add_location(b23, file, 210, 9, 4354);
-    			add_location(p23, file, 210, 2, 4347);
-    			add_location(hr25, file, 211, 2, 4382);
-    			attr_dev(article23, "class", "fem svelte-azb90x");
+    			add_location(article22, file, 242, 0, 4938);
+    			attr_dev(small23, "class", "svelte-1pfw7it");
+    			add_location(small23, file, 249, 2, 5115);
+    			add_location(b23, file, 250, 9, 5176);
+    			add_location(p23, file, 250, 2, 5169);
+    			add_location(hr25, file, 251, 2, 5204);
+    			attr_dev(article23, "class", "fem svelte-1pfw7it");
     			attr_dev(article23, "gender", "fem");
-    			add_location(article23, file, 208, 0, 4250);
+    			add_location(article23, file, 248, 0, 5078);
     			attr_dev(div1, "id", "form");
-    			attr_dev(div1, "class", "svelte-azb90x");
-    			add_location(div1, file, 51, 0, 832);
-    			add_location(br, file, 216, 0, 4407);
+    			attr_dev(div1, "class", "svelte-1pfw7it");
+    			add_location(div1, file, 90, 0, 1632);
+    			add_location(br, file, 256, 0, 5229);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -6505,351 +6619,353 @@ var app = (function () {
     			append_dev(div0, t2);
     			append_dev(div0, input1);
     			set_input_value(input1, /*trans*/ ctx[1]);
-    			append_dev(div1, t3);
-    			append_dev(div1, hr0);
-    			append_dev(div1, t4);
-    			mount_component(quizmodal, div1, null);
+    			append_dev(div0, t3);
+    			append_dev(div0, button);
     			append_dev(div1, t5);
-    			append_dev(div1, hr1);
+    			append_dev(div1, hr0);
     			append_dev(div1, t6);
+    			mount_component(quizmodal, div1, null);
+    			append_dev(div1, t7);
+    			append_dev(div1, hr1);
+    			append_dev(div1, t8);
     			append_dev(div1, article0);
     			append_dev(article0, small0);
-    			append_dev(small0, t7);
-    			append_dev(small0, t8);
-    			append_dev(article0, t9);
+    			append_dev(small0, t9);
+    			append_dev(small0, t10);
+    			append_dev(article0, t11);
     			append_dev(article0, p0);
-    			append_dev(p0, t10);
-    			append_dev(p0, b0);
-    			append_dev(b0, t11);
     			append_dev(p0, t12);
-    			append_dev(article0, t13);
+    			append_dev(p0, b0);
+    			append_dev(b0, t13);
+    			append_dev(p0, t14);
+    			append_dev(article0, t15);
     			append_dev(article0, hr2);
-    			append_dev(div1, t14);
+    			append_dev(div1, t16);
     			append_dev(div1, article1);
     			append_dev(article1, small1);
-    			append_dev(small1, t15);
-    			append_dev(small1, t16);
-    			append_dev(article1, t17);
+    			append_dev(small1, t17);
+    			append_dev(small1, t18);
+    			append_dev(small1, t19);
+    			append_dev(article1, t20);
     			append_dev(article1, p1);
     			append_dev(p1, u0);
-    			append_dev(p1, t19);
+    			append_dev(p1, t22);
     			append_dev(p1, b1);
-    			append_dev(b1, t20);
-    			append_dev(p1, t21);
-    			append_dev(article1, t22);
+    			append_dev(b1, t23);
+    			append_dev(p1, t24);
+    			append_dev(article1, t25);
     			append_dev(article1, hr3);
-    			append_dev(div1, t23);
+    			append_dev(div1, t26);
     			append_dev(div1, article2);
     			append_dev(article2, small2);
-    			append_dev(small2, t24);
-    			append_dev(small2, t25);
-    			append_dev(small2, t26);
-    			append_dev(article2, t27);
+    			append_dev(small2, t27);
+    			append_dev(small2, t28);
+    			append_dev(small2, t29);
+    			append_dev(article2, t30);
     			append_dev(article2, p2);
-    			append_dev(p2, t28);
+    			append_dev(p2, t31);
     			append_dev(p2, b2);
-    			append_dev(b2, t29);
-    			append_dev(p2, t30);
-    			append_dev(article2, t31);
+    			append_dev(b2, t32);
+    			append_dev(p2, t33);
+    			append_dev(article2, t34);
     			append_dev(article2, hr4);
-    			append_dev(div1, t32);
+    			append_dev(div1, t35);
     			append_dev(div1, article3);
     			append_dev(article3, small3);
-    			append_dev(small3, t33);
-    			append_dev(small3, t34);
-    			append_dev(small3, t35);
-    			append_dev(article3, t36);
+    			append_dev(small3, t36);
+    			append_dev(small3, t37);
+    			append_dev(small3, t38);
+    			append_dev(article3, t39);
     			append_dev(article3, p3);
-    			append_dev(p3, t37);
+    			append_dev(p3, t40);
     			append_dev(p3, b3);
-    			append_dev(b3, t38);
-    			append_dev(p3, t39);
-    			append_dev(article3, t40);
+    			append_dev(b3, t41);
+    			append_dev(p3, t42);
+    			append_dev(article3, t43);
     			append_dev(article3, hr5);
-    			append_dev(div1, t41);
+    			append_dev(div1, t44);
     			append_dev(div1, article4);
     			append_dev(article4, small4);
-    			append_dev(small4, t42);
-    			append_dev(small4, t43);
-    			append_dev(article4, t44);
+    			append_dev(small4, t45);
+    			append_dev(small4, t46);
+    			append_dev(article4, t47);
     			append_dev(article4, p4);
-    			append_dev(p4, t45);
+    			append_dev(p4, t48);
     			append_dev(p4, b4);
-    			append_dev(b4, t46);
-    			append_dev(p4, t47);
-    			append_dev(article4, t48);
+    			append_dev(b4, t49);
+    			append_dev(p4, t50);
+    			append_dev(article4, t51);
     			append_dev(article4, hr6);
-    			append_dev(div1, t49);
+    			append_dev(div1, t52);
     			append_dev(div1, article5);
     			append_dev(article5, small5);
-    			append_dev(small5, t50);
-    			append_dev(small5, t51);
-    			append_dev(article5, t52);
+    			append_dev(small5, t53);
+    			append_dev(small5, t54);
+    			append_dev(small5, t55);
+    			append_dev(article5, t56);
     			append_dev(article5, p5);
     			append_dev(p5, u1);
-    			append_dev(p5, t54);
+    			append_dev(p5, t58);
     			append_dev(p5, b5);
-    			append_dev(b5, t55);
-    			append_dev(p5, t56);
-    			append_dev(article5, t57);
+    			append_dev(b5, t59);
+    			append_dev(p5, t60);
+    			append_dev(article5, t61);
     			append_dev(article5, hr7);
-    			append_dev(div1, t58);
+    			append_dev(div1, t62);
     			append_dev(div1, article6);
     			append_dev(article6, small6);
-    			append_dev(small6, t59);
-    			append_dev(small6, t60);
-    			append_dev(small6, t61);
-    			append_dev(article6, t62);
-    			append_dev(article6, p6);
-    			append_dev(p6, t63);
-    			append_dev(p6, b6);
-    			append_dev(b6, t64);
-    			append_dev(p6, t65);
+    			append_dev(small6, t63);
+    			append_dev(small6, t64);
+    			append_dev(small6, t65);
     			append_dev(article6, t66);
+    			append_dev(article6, p6);
+    			append_dev(p6, t67);
+    			append_dev(p6, b6);
+    			append_dev(b6, t68);
+    			append_dev(p6, t69);
+    			append_dev(article6, t70);
     			append_dev(article6, hr8);
-    			append_dev(div1, t67);
+    			append_dev(div1, t71);
     			append_dev(div1, article7);
     			append_dev(article7, small7);
-    			append_dev(small7, t68);
-    			append_dev(small7, t69);
-    			append_dev(small7, t70);
-    			append_dev(article7, t71);
-    			append_dev(article7, p7);
-    			append_dev(p7, t72);
-    			append_dev(p7, b7);
-    			append_dev(b7, t73);
-    			append_dev(p7, t74);
+    			append_dev(small7, t72);
+    			append_dev(small7, t73);
+    			append_dev(small7, t74);
     			append_dev(article7, t75);
+    			append_dev(article7, p7);
+    			append_dev(p7, t76);
+    			append_dev(p7, b7);
+    			append_dev(b7, t77);
+    			append_dev(p7, t78);
+    			append_dev(article7, t79);
     			append_dev(article7, hr9);
-    			append_dev(div1, t76);
+    			append_dev(div1, t80);
     			append_dev(div1, article8);
     			append_dev(article8, small8);
-    			append_dev(small8, t77);
-    			append_dev(small8, t78);
-    			append_dev(small8, t79);
-    			append_dev(article8, t80);
+    			append_dev(small8, t81);
+    			append_dev(small8, t82);
+    			append_dev(article8, t83);
     			append_dev(article8, p8);
-    			append_dev(p8, t81);
+    			append_dev(p8, t84);
     			append_dev(p8, b8);
-    			append_dev(b8, t82);
-    			append_dev(p8, t83);
-    			append_dev(article8, t84);
+    			append_dev(b8, t85);
+    			append_dev(p8, t86);
+    			append_dev(article8, t87);
     			append_dev(article8, hr10);
-    			append_dev(div1, t85);
+    			append_dev(div1, t88);
     			append_dev(div1, article9);
     			append_dev(article9, small9);
-    			append_dev(small9, t86);
-    			append_dev(small9, t87);
-    			append_dev(small9, t88);
-    			append_dev(article9, t89);
+    			append_dev(small9, t89);
+    			append_dev(small9, t90);
+    			append_dev(small9, t91);
+    			append_dev(article9, t92);
     			append_dev(article9, p9);
     			append_dev(p9, u2);
-    			append_dev(p9, t91);
+    			append_dev(p9, t94);
     			append_dev(p9, b9);
-    			append_dev(b9, t92);
-    			append_dev(p9, t93);
-    			append_dev(article9, t94);
+    			append_dev(b9, t95);
+    			append_dev(p9, t96);
+    			append_dev(article9, t97);
     			append_dev(article9, hr11);
-    			append_dev(div1, t95);
+    			append_dev(div1, t98);
     			append_dev(div1, article10);
     			append_dev(article10, small10);
-    			append_dev(small10, t96);
-    			append_dev(small10, t97);
-    			append_dev(small10, t98);
-    			append_dev(article10, t99);
+    			append_dev(small10, t99);
+    			append_dev(small10, t100);
+    			append_dev(article10, t101);
     			append_dev(article10, p10);
-    			append_dev(p10, t100);
-    			append_dev(p10, b10);
-    			append_dev(b10, t101);
     			append_dev(p10, t102);
-    			append_dev(article10, t103);
+    			append_dev(p10, b10);
+    			append_dev(b10, t103);
+    			append_dev(p10, t104);
+    			append_dev(article10, t105);
     			append_dev(article10, hr12);
-    			append_dev(div1, t104);
+    			append_dev(div1, t106);
     			append_dev(div1, article11);
     			append_dev(article11, small11);
-    			append_dev(small11, t105);
-    			append_dev(small11, t106);
-    			append_dev(article11, t107);
+    			append_dev(small11, t107);
+    			append_dev(small11, t108);
+    			append_dev(article11, t109);
     			append_dev(article11, p11);
     			append_dev(p11, u3);
-    			append_dev(p11, t109);
-    			append_dev(p11, b11);
-    			append_dev(b11, t110);
     			append_dev(p11, t111);
-    			append_dev(article11, t112);
+    			append_dev(p11, b11);
+    			append_dev(b11, t112);
+    			append_dev(p11, t113);
+    			append_dev(article11, t114);
     			append_dev(article11, hr13);
-    			append_dev(div1, t113);
+    			append_dev(div1, t115);
     			append_dev(div1, article12);
     			append_dev(article12, small12);
-    			append_dev(small12, t114);
-    			append_dev(small12, t115);
-    			append_dev(article12, t116);
+    			append_dev(small12, t116);
+    			append_dev(small12, t117);
+    			append_dev(article12, t118);
     			append_dev(article12, p12);
-    			append_dev(p12, t117);
-    			append_dev(p12, b12);
-    			append_dev(b12, t118);
     			append_dev(p12, t119);
-    			append_dev(article12, t120);
+    			append_dev(p12, b12);
+    			append_dev(b12, t120);
+    			append_dev(p12, t121);
+    			append_dev(article12, t122);
     			append_dev(article12, hr14);
-    			append_dev(div1, t121);
+    			append_dev(div1, t123);
     			append_dev(div1, article13);
     			append_dev(article13, small13);
-    			append_dev(small13, t122);
-    			append_dev(small13, t123);
-    			append_dev(article13, t124);
+    			append_dev(small13, t124);
+    			append_dev(small13, t125);
+    			append_dev(article13, t126);
     			append_dev(article13, p13);
     			append_dev(p13, u4);
-    			append_dev(p13, t126);
-    			append_dev(p13, b13);
-    			append_dev(b13, t127);
     			append_dev(p13, t128);
-    			append_dev(article13, t129);
+    			append_dev(p13, b13);
+    			append_dev(b13, t129);
+    			append_dev(p13, t130);
+    			append_dev(article13, t131);
     			append_dev(article13, hr15);
-    			append_dev(div1, t130);
+    			append_dev(div1, t132);
     			append_dev(div1, article14);
     			append_dev(article14, small14);
-    			append_dev(small14, t131);
-    			append_dev(small14, t132);
     			append_dev(small14, t133);
-    			append_dev(article14, t134);
+    			append_dev(small14, t134);
+    			append_dev(article14, t135);
     			append_dev(article14, p14);
-    			append_dev(p14, t135);
+    			append_dev(p14, t136);
     			append_dev(p14, b14);
-    			append_dev(b14, t136);
-    			append_dev(p14, t137);
-    			append_dev(article14, t138);
+    			append_dev(b14, t137);
+    			append_dev(p14, t138);
+    			append_dev(article14, t139);
     			append_dev(article14, hr16);
-    			append_dev(div1, t139);
+    			append_dev(div1, t140);
     			append_dev(div1, article15);
     			append_dev(article15, small15);
-    			append_dev(small15, t140);
     			append_dev(small15, t141);
     			append_dev(small15, t142);
-    			append_dev(article15, t143);
+    			append_dev(small15, t143);
+    			append_dev(article15, t144);
     			append_dev(article15, p15);
     			append_dev(p15, u5);
-    			append_dev(p15, t145);
+    			append_dev(p15, t146);
     			append_dev(p15, b15);
-    			append_dev(b15, t146);
-    			append_dev(p15, t147);
-    			append_dev(article15, t148);
+    			append_dev(b15, t147);
+    			append_dev(p15, t148);
+    			append_dev(article15, t149);
     			append_dev(article15, hr17);
-    			append_dev(div1, t149);
+    			append_dev(div1, t150);
     			append_dev(div1, article16);
     			append_dev(article16, small16);
-    			append_dev(small16, t150);
     			append_dev(small16, t151);
-    			append_dev(article16, t152);
+    			append_dev(small16, t152);
+    			append_dev(article16, t153);
     			append_dev(article16, p16);
     			append_dev(p16, b16);
-    			append_dev(b16, t153);
-    			append_dev(p16, t154);
-    			append_dev(article16, t155);
+    			append_dev(b16, t154);
+    			append_dev(p16, t155);
+    			append_dev(article16, t156);
     			append_dev(article16, hr18);
-    			append_dev(div1, t156);
+    			append_dev(div1, t157);
     			append_dev(div1, article17);
     			append_dev(article17, small17);
-    			append_dev(small17, t157);
     			append_dev(small17, t158);
     			append_dev(small17, t159);
-    			append_dev(article17, t160);
+    			append_dev(small17, t160);
+    			append_dev(article17, t161);
     			append_dev(article17, p17);
     			append_dev(p17, b17);
-    			append_dev(b17, t161);
-    			append_dev(p17, t162);
-    			append_dev(article17, t163);
+    			append_dev(b17, t162);
+    			append_dev(p17, t163);
+    			append_dev(article17, t164);
     			append_dev(article17, hr19);
-    			append_dev(div1, t164);
+    			append_dev(div1, t165);
     			append_dev(div1, article18);
     			append_dev(article18, small18);
-    			append_dev(small18, t165);
     			append_dev(small18, t166);
-    			append_dev(article18, t167);
+    			append_dev(small18, t167);
+    			append_dev(article18, t168);
     			append_dev(article18, p18);
     			append_dev(p18, b18);
-    			append_dev(b18, t168);
-    			append_dev(p18, t169);
-    			append_dev(article18, t170);
+    			append_dev(b18, t169);
+    			append_dev(p18, t170);
+    			append_dev(article18, t171);
     			append_dev(article18, hr20);
-    			append_dev(div1, t171);
+    			append_dev(div1, t172);
     			append_dev(div1, article19);
     			append_dev(article19, small19);
-    			append_dev(small19, t172);
     			append_dev(small19, t173);
     			append_dev(small19, t174);
-    			append_dev(article19, t175);
+    			append_dev(small19, t175);
+    			append_dev(article19, t176);
     			append_dev(article19, p19);
     			append_dev(p19, b19);
-    			append_dev(b19, t176);
-    			append_dev(p19, t177);
-    			append_dev(article19, t178);
+    			append_dev(b19, t177);
+    			append_dev(p19, t178);
+    			append_dev(article19, t179);
     			append_dev(article19, hr21);
-    			append_dev(div1, t179);
+    			append_dev(div1, t180);
     			append_dev(div1, article20);
     			append_dev(article20, small20);
-    			append_dev(small20, t180);
     			append_dev(small20, t181);
     			append_dev(small20, t182);
-    			append_dev(article20, t183);
+    			append_dev(small20, t183);
+    			append_dev(article20, t184);
     			append_dev(article20, p20);
-    			append_dev(p20, t184);
+    			append_dev(p20, t185);
     			append_dev(p20, b20);
-    			append_dev(b20, t185);
-    			append_dev(p20, t186);
-    			append_dev(article20, t187);
+    			append_dev(b20, t186);
+    			append_dev(p20, t187);
+    			append_dev(article20, t188);
     			append_dev(article20, hr22);
-    			append_dev(div1, t188);
+    			append_dev(div1, t189);
     			append_dev(div1, article21);
     			append_dev(article21, small21);
-    			append_dev(small21, t189);
     			append_dev(small21, t190);
     			append_dev(small21, t191);
-    			append_dev(article21, t192);
+    			append_dev(small21, t192);
+    			append_dev(article21, t193);
     			append_dev(article21, p21);
-    			append_dev(p21, t193);
+    			append_dev(p21, t194);
     			append_dev(p21, b21);
-    			append_dev(b21, t194);
-    			append_dev(p21, t195);
-    			append_dev(article21, t196);
+    			append_dev(b21, t195);
+    			append_dev(p21, t196);
+    			append_dev(article21, t197);
     			append_dev(article21, hr23);
-    			append_dev(div1, t197);
+    			append_dev(div1, t198);
     			append_dev(div1, article22);
     			append_dev(article22, small22);
-    			append_dev(small22, t198);
     			append_dev(small22, t199);
     			append_dev(small22, t200);
-    			append_dev(article22, t201);
+    			append_dev(small22, t201);
+    			append_dev(article22, t202);
     			append_dev(article22, p22);
-    			append_dev(p22, t202);
+    			append_dev(p22, t203);
     			append_dev(p22, b22);
-    			append_dev(b22, t203);
-    			append_dev(p22, t204);
-    			append_dev(article22, t205);
+    			append_dev(b22, t204);
+    			append_dev(p22, t205);
+    			append_dev(article22, t206);
     			append_dev(article22, hr24);
-    			append_dev(div1, t206);
+    			append_dev(div1, t207);
     			append_dev(div1, article23);
     			append_dev(article23, small23);
-    			append_dev(small23, t207);
     			append_dev(small23, t208);
     			append_dev(small23, t209);
-    			append_dev(article23, t210);
+    			append_dev(small23, t210);
+    			append_dev(article23, t211);
     			append_dev(article23, p23);
-    			append_dev(p23, t211);
+    			append_dev(p23, t212);
     			append_dev(p23, b23);
-    			append_dev(b23, t212);
-    			append_dev(p23, t213);
-    			append_dev(article23, t214);
+    			append_dev(b23, t213);
+    			append_dev(p23, t214);
+    			append_dev(article23, t215);
     			append_dev(article23, hr25);
-    			insert_dev(target, t215, anchor);
-    			insert_dev(target, br, anchor);
     			insert_dev(target, t216, anchor);
+    			insert_dev(target, br, anchor);
+    			insert_dev(target, t217, anchor);
     			mount_component(words, target, anchor);
     			current = true;
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(input0, "input", /*input0_input_handler*/ ctx[3]),
-    					listen_dev(input1, "input", /*input1_input_handler*/ ctx[4])
+    					listen_dev(input0, "input", /*input0_input_handler*/ ctx[5]),
+    					listen_dev(input1, "input", /*input1_input_handler*/ ctx[6]),
+    					listen_dev(button, "click", /*addVerb*/ ctx[4], false, false, false)
     				];
 
     				mounted = true;
@@ -6868,54 +6984,70 @@ var app = (function () {
     			if (dirty & /*gerund*/ 1) quizmodal_changes.gerund = /*gerund*/ ctx[0];
     			if (dirty & /*trans*/ 2) quizmodal_changes.trans = /*trans*/ ctx[1];
     			quizmodal.$set(quizmodal_changes);
-    			if (!current || dirty & /*trans*/ 2) set_data_dev(t8, /*trans*/ ctx[1]);
-    			if (!current || dirty & /*bones*/ 4) set_data_dev(t11, /*bones*/ ctx[2]);
-    			if (!current || dirty & /*trans*/ 2) set_data_dev(t16, /*trans*/ ctx[1]);
-    			if (!current || dirty & /*bones*/ 4) set_data_dev(t20, /*bones*/ ctx[2]);
-    			if (!current || dirty & /*trans*/ 2) set_data_dev(t25, /*trans*/ ctx[1]);
-    			if (!current || dirty & /*bones*/ 4) set_data_dev(t29, /*bones*/ ctx[2]);
-    			if (!current || dirty & /*trans*/ 2) set_data_dev(t34, /*trans*/ ctx[1]);
-    			if (!current || dirty & /*bones*/ 4) set_data_dev(t38, /*bones*/ ctx[2]);
-    			if (!current || dirty & /*trans*/ 2) set_data_dev(t43, /*trans*/ ctx[1]);
-    			if (!current || dirty & /*bones*/ 4) set_data_dev(t46, /*bones*/ ctx[2]);
-    			if (!current || dirty & /*trans*/ 2) set_data_dev(t51, /*trans*/ ctx[1]);
-    			if (!current || dirty & /*bones*/ 4) set_data_dev(t55, /*bones*/ ctx[2]);
-    			if (!current || dirty & /*trans*/ 2) set_data_dev(t60, /*trans*/ ctx[1]);
-    			if (!current || dirty & /*bones*/ 4) set_data_dev(t64, /*bones*/ ctx[2]);
-    			if (!current || dirty & /*trans*/ 2) set_data_dev(t69, /*trans*/ ctx[1]);
-    			if (!current || dirty & /*bones*/ 4) set_data_dev(t73, /*bones*/ ctx[2]);
-    			if (!current || dirty & /*trans*/ 2) set_data_dev(t78, /*trans*/ ctx[1]);
-    			if (!current || dirty & /*bones*/ 4) set_data_dev(t82, /*bones*/ ctx[2]);
-    			if (!current || dirty & /*trans*/ 2) set_data_dev(t87, /*trans*/ ctx[1]);
-    			if (!current || dirty & /*bones*/ 4) set_data_dev(t92, /*bones*/ ctx[2]);
-    			if ((!current || dirty & /*trans*/ 2) && t97_value !== (t97_value = /*trans*/ ctx[1].split("ing")[0] + "")) set_data_dev(t97, t97_value);
-    			if (!current || dirty & /*bones*/ 4) set_data_dev(t101, /*bones*/ ctx[2]);
-    			if ((!current || dirty & /*trans*/ 2) && t106_value !== (t106_value = /*trans*/ ctx[1].split("ing")[0] + "")) set_data_dev(t106, t106_value);
-    			if (!current || dirty & /*bones*/ 4) set_data_dev(t110, /*bones*/ ctx[2]);
-    			if ((!current || dirty & /*trans*/ 2) && t115_value !== (t115_value = /*trans*/ ctx[1].split("ing")[0] + "")) set_data_dev(t115, t115_value);
-    			if (!current || dirty & /*bones*/ 4) set_data_dev(t118, /*bones*/ ctx[2]);
-    			if ((!current || dirty & /*trans*/ 2) && t123_value !== (t123_value = /*trans*/ ctx[1].split("ing")[0] + "")) set_data_dev(t123, t123_value);
-    			if (!current || dirty & /*bones*/ 4) set_data_dev(t127, /*bones*/ ctx[2]);
-    			if ((!current || dirty & /*trans*/ 2) && t132_value !== (t132_value = /*trans*/ ctx[1].split("ing")[0] + "")) set_data_dev(t132, t132_value);
-    			if (!current || dirty & /*bones*/ 4) set_data_dev(t136, /*bones*/ ctx[2]);
-    			if ((!current || dirty & /*trans*/ 2) && t141_value !== (t141_value = /*trans*/ ctx[1].split("ing")[0] + "")) set_data_dev(t141, t141_value);
-    			if (!current || dirty & /*bones*/ 4) set_data_dev(t146, /*bones*/ ctx[2]);
-    			if ((!current || dirty & /*trans*/ 2) && t150_value !== (t150_value = /*trans*/ ctx[1].split("ing")[0] + "")) set_data_dev(t150, t150_value);
-    			if (!current || dirty & /*bones*/ 4) set_data_dev(t153, /*bones*/ ctx[2]);
-    			if ((!current || dirty & /*trans*/ 2) && t158_value !== (t158_value = /*trans*/ ctx[1].split("ing")[0] + "")) set_data_dev(t158, t158_value);
-    			if (!current || dirty & /*bones*/ 4) set_data_dev(t161, /*bones*/ ctx[2]);
-    			if ((!current || dirty & /*trans*/ 2) && t165_value !== (t165_value = /*trans*/ ctx[1].split("ing")[0] + "")) set_data_dev(t165, t165_value);
-    			if (!current || dirty & /*bones*/ 4) set_data_dev(t168, /*bones*/ ctx[2]);
-    			if ((!current || dirty & /*trans*/ 2) && t173_value !== (t173_value = /*trans*/ ctx[1].split("ing")[0] + "")) set_data_dev(t173, t173_value);
-    			if (!current || dirty & /*bones*/ 4) set_data_dev(t176, /*bones*/ ctx[2]);
-    			if ((!current || dirty & /*trans*/ 2) && t181_value !== (t181_value = /*trans*/ ctx[1].split("ing")[0] + "")) set_data_dev(t181, t181_value);
-    			if (!current || dirty & /*bones*/ 4) set_data_dev(t185, /*bones*/ ctx[2]);
-    			if ((!current || dirty & /*trans*/ 2) && t190_value !== (t190_value = /*trans*/ ctx[1].split("ing")[0] + "")) set_data_dev(t190, t190_value);
-    			if (!current || dirty & /*bones*/ 4) set_data_dev(t194, /*bones*/ ctx[2]);
-    			if ((!current || dirty & /*trans*/ 2) && t199_value !== (t199_value = /*trans*/ ctx[1].split("ing")[0] + "")) set_data_dev(t199, t199_value);
-    			if (!current || dirty & /*bones*/ 4) set_data_dev(t203, /*bones*/ ctx[2]);
-    			if ((!current || dirty & /*trans*/ 2) && t208_value !== (t208_value = /*trans*/ ctx[1].split("ing")[0] + "")) set_data_dev(t208, t208_value);
-    			if (!current || dirty & /*bones*/ 4) set_data_dev(t212, /*bones*/ ctx[2]);
+    			if (!current || dirty & /*trans*/ 2) set_data_dev(t10, /*trans*/ ctx[1]);
+    			if (!current || dirty & /*bones*/ 8) set_data_dev(t13, /*bones*/ ctx[3]);
+    			if (!current || dirty & /*trans*/ 2) set_data_dev(t18, /*trans*/ ctx[1]);
+    			if (!current || dirty & /*bones*/ 8) set_data_dev(t23, /*bones*/ ctx[3]);
+    			if (!current || dirty & /*trans*/ 2) set_data_dev(t28, /*trans*/ ctx[1]);
+    			if (!current || dirty & /*bones*/ 8) set_data_dev(t32, /*bones*/ ctx[3]);
+    			if (!current || dirty & /*trans*/ 2) set_data_dev(t37, /*trans*/ ctx[1]);
+    			if (!current || dirty & /*bones*/ 8) set_data_dev(t41, /*bones*/ ctx[3]);
+    			if (!current || dirty & /*trans*/ 2) set_data_dev(t46, /*trans*/ ctx[1]);
+    			if (!current || dirty & /*bones*/ 8) set_data_dev(t49, /*bones*/ ctx[3]);
+    			if (!current || dirty & /*trans*/ 2) set_data_dev(t54, /*trans*/ ctx[1]);
+    			if (!current || dirty & /*bones*/ 8) set_data_dev(t59, /*bones*/ ctx[3]);
+    			if (!current || dirty & /*trans*/ 2) set_data_dev(t64, /*trans*/ ctx[1]);
+    			if (!current || dirty & /*bones*/ 8) set_data_dev(t68, /*bones*/ ctx[3]);
+    			if (!current || dirty & /*trans*/ 2) set_data_dev(t73, /*trans*/ ctx[1]);
+    			if (!current || dirty & /*bones*/ 8) set_data_dev(t77, /*bones*/ ctx[3]);
+    			if (!current || dirty & /*trans*/ 2) set_data_dev(t82, /*trans*/ ctx[1]);
+    			if (!current || dirty & /*bones*/ 8) set_data_dev(t85, /*bones*/ ctx[3]);
+    			if (!current || dirty & /*trans*/ 2) set_data_dev(t90, /*trans*/ ctx[1]);
+    			if (!current || dirty & /*bones*/ 8) set_data_dev(t95, /*bones*/ ctx[3]);
+    			if ((!current || dirty & /*trans*/ 2) && t100_value !== (t100_value = /*trans*/ ctx[1].split("ing")[0] + "")) set_data_dev(t100, t100_value);
+    			if (!current || dirty & /*bones*/ 8) set_data_dev(t103, /*bones*/ ctx[3]);
+    			if ((!current || dirty & /*trans*/ 2) && t108_value !== (t108_value = /*trans*/ ctx[1].split("ing")[0] + "")) set_data_dev(t108, t108_value);
+    			if (!current || dirty & /*bones*/ 8) set_data_dev(t112, /*bones*/ ctx[3]);
+    			if ((!current || dirty & /*trans*/ 2) && t117_value !== (t117_value = /*trans*/ ctx[1].split("ing")[0] + "")) set_data_dev(t117, t117_value);
+    			if (!current || dirty & /*bones*/ 8) set_data_dev(t120, /*bones*/ ctx[3]);
+    			if ((!current || dirty & /*trans*/ 2) && t125_value !== (t125_value = /*trans*/ ctx[1].split("ing")[0] + "")) set_data_dev(t125, t125_value);
+    			if (!current || dirty & /*bones*/ 8) set_data_dev(t129, /*bones*/ ctx[3]);
+    			if ((!current || dirty & /*trans*/ 2) && t134_value !== (t134_value = /*trans*/ ctx[1].split("ing")[0] + "")) set_data_dev(t134, t134_value);
+    			if (!current || dirty & /*bones*/ 8) set_data_dev(t137, /*bones*/ ctx[3]);
+    			if ((!current || dirty & /*trans*/ 2) && t142_value !== (t142_value = /*trans*/ ctx[1].split("ing")[0] + "")) set_data_dev(t142, t142_value);
+    			if (!current || dirty & /*bones*/ 8) set_data_dev(t147, /*bones*/ ctx[3]);
+    			if ((!current || dirty & /*trans*/ 2) && t151_value !== (t151_value = /*trans*/ ctx[1].split("ing")[0] + "")) set_data_dev(t151, t151_value);
+    			if (!current || dirty & /*bones*/ 8) set_data_dev(t154, /*bones*/ ctx[3]);
+    			if ((!current || dirty & /*trans*/ 2) && t159_value !== (t159_value = /*trans*/ ctx[1].split("ing")[0] + "")) set_data_dev(t159, t159_value);
+    			if (!current || dirty & /*bones*/ 8) set_data_dev(t162, /*bones*/ ctx[3]);
+    			if ((!current || dirty & /*trans*/ 2) && t166_value !== (t166_value = /*trans*/ ctx[1].split("ing")[0] + "")) set_data_dev(t166, t166_value);
+    			if (!current || dirty & /*bones*/ 8) set_data_dev(t169, /*bones*/ ctx[3]);
+    			if ((!current || dirty & /*trans*/ 2) && t174_value !== (t174_value = /*trans*/ ctx[1].split("ing")[0] + "")) set_data_dev(t174, t174_value);
+    			if (!current || dirty & /*bones*/ 8) set_data_dev(t177, /*bones*/ ctx[3]);
+    			if ((!current || dirty & /*trans*/ 2) && t182_value !== (t182_value = /*trans*/ ctx[1].split("ing")[0] + "")) set_data_dev(t182, t182_value);
+    			if (!current || dirty & /*bones*/ 8) set_data_dev(t186, /*bones*/ ctx[3]);
+    			if ((!current || dirty & /*trans*/ 2) && t191_value !== (t191_value = /*trans*/ ctx[1].split("ing")[0] + "")) set_data_dev(t191, t191_value);
+    			if (!current || dirty & /*bones*/ 8) set_data_dev(t195, /*bones*/ ctx[3]);
+    			if ((!current || dirty & /*trans*/ 2) && t200_value !== (t200_value = /*trans*/ ctx[1].split("ing")[0] + "")) set_data_dev(t200, t200_value);
+    			if (!current || dirty & /*bones*/ 8) set_data_dev(t204, /*bones*/ ctx[3]);
+    			if ((!current || dirty & /*trans*/ 2) && t209_value !== (t209_value = /*trans*/ ctx[1].split("ing")[0] + "")) set_data_dev(t209, t209_value);
+    			if (!current || dirty & /*bones*/ 8) set_data_dev(t213, /*bones*/ ctx[3]);
+    			const words_changes = {};
+    			if (dirty & /*verbs*/ 4) words_changes.verbs = /*verbs*/ ctx[2];
+
+    			if (!updating_changeGerund && dirty & /*gerund*/ 1) {
+    				updating_changeGerund = true;
+    				words_changes.changeGerund = /*gerund*/ ctx[0];
+    				add_flush_callback(() => updating_changeGerund = false);
+    			}
+
+    			if (!updating_changeTrans && dirty & /*trans*/ 2) {
+    				updating_changeTrans = true;
+    				words_changes.changeTrans = /*trans*/ ctx[1];
+    				add_flush_callback(() => updating_changeTrans = false);
+    			}
+
+    			words.$set(words_changes);
     		},
     		i: function intro(local) {
     			if (current) return;
@@ -6931,9 +7063,9 @@ var app = (function () {
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(div1);
     			destroy_component(quizmodal);
-    			if (detaching) detach_dev(t215);
-    			if (detaching) detach_dev(br);
     			if (detaching) detach_dev(t216);
+    			if (detaching) detach_dev(br);
+    			if (detaching) detach_dev(t217);
     			destroy_component(words, detaching);
     			mounted = false;
     			run_all(dispose);
@@ -6968,10 +7100,42 @@ var app = (function () {
     	let gerund = "khaa";
     	let trans = "eating";
     	let questions = [];
+    	let db = new PouchDB('urdu');
+    	let verbs = [];
+
+    	function getVerbs() {
+    		db.allDocs({ include_docs: true, attachments: true }).then(function (result) {
+    			// handle result
+    			console.log(result);
+
+    			$$invalidate(2, verbs = result["rows"]);
+    		}).catch(function (err) {
+    			console.log(err);
+    		});
+    	}
+
+    	getVerbs();
+
+    	function addVerb() {
+    		var verb = {
+    			_id: new Date().toISOString(),
+    			verb: gerund,
+    			trans
+    		};
+
+    		db.put(verb, function callback(err, result) {
+    			getVerbs();
+
+    			if (!err) {
+    				console.log('Successfully posted a verb!');
+    			}
+    		});
+    	}
+
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
-    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console.warn(`<App> was created with unknown prop '${key}'`);
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console_1.warn(`<App> was created with unknown prop '${key}'`);
     	});
 
     	function input0_input_handler() {
@@ -6984,6 +7148,16 @@ var app = (function () {
     		$$invalidate(1, trans);
     	}
 
+    	function words_changeGerund_binding(value) {
+    		gerund = value;
+    		$$invalidate(0, gerund);
+    	}
+
+    	function words_changeTrans_binding(value) {
+    		trans = value;
+    		$$invalidate(1, trans);
+    	}
+
     	$$self.$capture_state = () => ({
     		ContactCard,
     		Swal: sweetalert2_all,
@@ -6993,6 +7167,10 @@ var app = (function () {
     		trans,
     		questions,
     		sanitize,
+    		db,
+    		verbs,
+    		getVerbs,
+    		addVerb,
     		bones
     	});
 
@@ -7000,7 +7178,9 @@ var app = (function () {
     		if ('gerund' in $$props) $$invalidate(0, gerund = $$props.gerund);
     		if ('trans' in $$props) $$invalidate(1, trans = $$props.trans);
     		if ('questions' in $$props) questions = $$props.questions;
-    		if ('bones' in $$props) $$invalidate(2, bones = $$props.bones);
+    		if ('db' in $$props) db = $$props.db;
+    		if ('verbs' in $$props) $$invalidate(2, verbs = $$props.verbs);
+    		if ('bones' in $$props) $$invalidate(3, bones = $$props.bones);
     	};
 
     	if ($$props && "$$inject" in $$props) {
@@ -7009,11 +7189,21 @@ var app = (function () {
 
     	$$self.$$.update = () => {
     		if ($$self.$$.dirty & /*gerund*/ 1) {
-    			$$invalidate(2, bones = sanitize(gerund));
+    			$$invalidate(3, bones = sanitize(gerund));
     		}
     	};
 
-    	return [gerund, trans, bones, input0_input_handler, input1_input_handler];
+    	return [
+    		gerund,
+    		trans,
+    		verbs,
+    		bones,
+    		addVerb,
+    		input0_input_handler,
+    		input1_input_handler,
+    		words_changeGerund_binding,
+    		words_changeTrans_binding
+    	];
     }
 
     class App extends SvelteComponentDev {

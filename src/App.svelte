@@ -20,6 +20,40 @@
     return gerund
   }
 
+  let db = new PouchDB('urdu');
+  
+  let verbs = []
+  
+  function getVerbs(){
+        db.allDocs({
+            include_docs: true,
+            attachments: true
+        }).then(function (result) {
+        // handle result
+            console.log(result)
+            verbs = result["rows"]
+        }).catch(function (err) {
+            console.log(err);
+        });
+  }
+  getVerbs()
+
+  function addVerb() {
+      var verb = {
+          _id: new Date().toISOString(),
+          verb: gerund,
+          trans: trans
+      };
+      db.put(verb, function callback(err, result) {
+
+        
+        getVerbs()
+
+          if (!err) {
+              console.log('Successfully posted a verb!');
+          }
+      });
+  }
 
 </script>
 
@@ -47,6 +81,11 @@
     color: #ff93a6;
   }
 
+  [gender="neutral"] {
+    border-left: 10px dashed #000000;
+    padding-left: 12px;
+  }
+
 </style>
 
 <div id="form">
@@ -54,6 +93,7 @@
     <label for="gerund">Gerund</label>
     <input type="text" bind:value={gerund} id="gerund" placeholder="Gerund" />
     <input type="text" bind:value={trans}  id="trans" placeholder="Translation"  />
+    <button class="btn-info" on:click="{addVerb}">+</button>
   </div>
 
   <hr>
@@ -68,20 +108,20 @@
 </article>
 
 <article class="masc" gender="masc">
-  <small>He is  {trans} </small>
+  <small>He is  {trans} 🧢</small>
   <p><u>Woh</u> <b>{bones}</b>rahaa he </p>
   <hr>
 </article>
 
 <article class="masc" gender="masc">
-  <small>You are {trans} (informal) </small>
+  <small>You are {trans} 🧢 </small>
   <p>Tum <b>{bones}</b>rahey ho </p>
   <hr>
 </article>
 
 
 <article class="masc" gender="masc">
-  <small>You are {trans} (formal) </small>
+  <small>You are {trans} 🎩 </small>
   <p>Aap <b>{bones}</b>rahey hein </p>
   <hr>
 </article>
@@ -94,31 +134,31 @@
 </article>
 
 <article class="fem" gender="fem">
-  <small>She is {trans} </small>
+  <small>She is {trans} 🧢</small>
   <p><u>Woh</u> <b>{bones}</b>rahee he </p>
   <hr>
 </article>
 
 <article class="fem" gender="fem">
-  <small>You are {trans} (informal) </small>
+  <small>You are {trans} 🧢 </small>
   <p>Tum <b>{bones}</b>rahee ho </p>
   <hr>
 </article>
 
 <article class="fem" gender="fem">
-  <small>You are {trans} (formal) </small>
+  <small>You are {trans} 🎩 </small>
   <p>Aap <b>{bones}</b>raheen hein </p>
   <hr>
 </article>
 
-<article>
+<article gender="neutral">
   <small>We're {trans}</small>
   <p>Hum <b>{bones}</b>rahey hein </p>
   <hr>
 </article>
 
 
-<article>
+<article gender="neutral">
   <small>They're {trans} (they/formal)</small>
   <p><u>Woh</u> <b>{bones}</b>rahey hein </p>
   <hr>
@@ -126,7 +166,7 @@
 
 
 <article class="masc" gender="masc">
-  <small>I will {trans.split("ing")[0]} (1stp)</small>
+  <small>I will {trans.split("ing")[0]}</small>
   <p>Mein <b>{bones}</b>unga</p>
   <hr>
 </article>
@@ -150,64 +190,64 @@
 </article>
 
 
-<article>
+<article gender="neutral">
   <small>We will {trans.split("ing")[0]}</small>
   <p>Hum <b>{bones}</b>eingay</p>
   <hr>
 </article>
 
-<article>
-  <small>They/He will {trans.split("ing")[0]} (they/formal)</small>
+<article gender="neutral">
+  <small>They/He will {trans.split("ing")[0]} (they/🎩)</small>
   <p><u>Woh</u> <b>{bones}</b>eingay</p>
   <hr>
 </article>
 
 
-<article>
-  <small>{trans.split("ing")[0]}! (informal)</small>
+<article gender="neutral">
+  <small>{trans.split("ing")[0]}! 🧢</small>
   <p><b>{bones}</b>o!</p>
   <hr>
 </article>
 
-<article>
-  <small>Please {trans.split("ing")[0]}! (informal)</small>
+<article gender="neutral">
+  <small>Please {trans.split("ing")[0]}! 🧢</small>
   <p><b>{bones}</b>ein!</p>
   <hr>
 </article>
 
-<article>
-  <small>{trans.split("ing")[0]}! (formal)</small>
+<article gender="neutral">
+  <small>{trans.split("ing")[0]}! 🎩</small>
   <p><b>{bones}</b>ein!</p>
   <hr>
 </article>
 
-<article>
-  <small>Please {trans.split("ing")[0]}! (formal)</small>
+<article gender="neutral">
+  <small>Please {trans.split("ing")[0]}! 🎩</small>
   <p><b>{bones}</b>ein!</p>
   <hr>
 </article>
 
 <article class="masc" gender="masc">
-  <small>Will you {trans.split("ing")[0]}? (informal)</small>
+  <small>Will you {trans.split("ing")[0]}? 🧢</small>
   <p>Tum <b>{bones}</b>ogay?</p>
   <hr>
 </article>
 
 <article class="masc" gender="masc">
-  <small>Will you {trans.split("ing")[0]}? (formal)</small>
+  <small>Will you {trans.split("ing")[0]}? 🎩</small>
   <p>Aap <b>{bones}</b>eingey?</p>
   <hr>
 </article>
 
 
 <article class="fem" gender="fem">
-  <small>Will you {trans.split("ing")[0]}? (informal)</small>
+  <small>Will you {trans.split("ing")[0]}? 🧢</small>
   <p>Tum <b>{bones}</b>ogi?</p>
   <hr>
 </article>
 
 <article class="fem" gender="fem">
-  <small>Will you {trans.split("ing")[0]}? (formal)</small>
+  <small>Will you {trans.split("ing")[0]}? 🎩</small>
   <p>Aap <b>{bones}</b>eingee?</p>
   <hr>
 </article>
@@ -216,4 +256,4 @@
 
 <br>
 
-<Words></Words>
+<Words verbs={verbs} bind:changeGerund={gerund} bind:changeTrans={trans}></Words>

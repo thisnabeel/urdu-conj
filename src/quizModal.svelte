@@ -74,6 +74,13 @@
 </script> 
 
 <style>
+    ul {
+        list-style: none;
+    }
+
+    ul li {
+        margin-bottom: 10px;
+    }
     .green {
         background-color:#9aff9a;
     }
@@ -100,6 +107,11 @@
     [gender="fem"] {
         color: #ff2b50;
         border-left: 16px solid #ff93a6;
+    }
+
+    [gender="neutral"] {
+        border-left: 16px dashed #000000;
+        padding-left: 12px;
     }
 </style>
  

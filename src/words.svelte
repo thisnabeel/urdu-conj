@@ -1,31 +1,14 @@
 <script>
-    let db = new PouchDB('todos');
 
-    function addVerb(text) {
-        var verb = {
-            _id: new Date().toISOString(),
-            verb: text,
-        };
-        db.put(verb, function callback(err, result) {
-            if (!err) {
-                console.log('Successfully posted a verb!');
-            }
-        });
+    export let verbs 
+
+    export let changeGerund
+    export let changeTrans
+
+    function populateMain(gerund, trans){
+        changeGerund = gerund
+        changeTrans = trans
     }
-
-    let verbs = []
-
-    db.allDocs({
-        include_docs: true,
-        attachments: true
-    }).then(function (result) {
-    // handle result
-        console.log(result)
-        verbs = result["rows"]
-    }).catch(function (err) {
-        console.log(err);
-    });
-    console.log(verbs)
 
 </script>
 
@@ -34,14 +17,21 @@
         position: fixed;
         right: 0;
         bottom: 0;
-        padding: 30px;
+        padding: 0;
         background: #f0f8ff;
+        list-style: none;
+    }
+
+    ul li {
+        padding: 10px;
+        background: #e5f3ff;
+        margin: 16px;
     }
 </style>
 
 <ul>
     {#each verbs as verb}
-        <li>{verb["doc"]["verb"]}</li>
+    <li on:click={populateMain(verb["doc"]["verb"], verb["doc"]["trans"])} gerund={verb["doc"]["verb"]} trans={verb["doc"]["trans"]}>{verb["doc"]["verb"]}</li>
     {/each}
 </ul>
 
