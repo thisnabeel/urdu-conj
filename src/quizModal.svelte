@@ -50,7 +50,7 @@
             incorrect += 1
         }
         showColors = true
-        // setTimeout(randomizer, 1500);
+        setTimeout(randomizer, 1500);
         
     }
 
@@ -79,8 +79,8 @@
     }
 
     .red {
-        /* background-color: #ffb0b0; */
-        border: 6px dashed #ed3838;
+        background-color: #ed3838;
+        /* border: 6px dashed #ed3838; */
     }
 
     .green, .red {
@@ -90,7 +90,6 @@
     .hide-answers .green, 
     .hide-answers .red {
         background-color: transparent;
-        border: none;
     }
 
     [gender="masc"] {

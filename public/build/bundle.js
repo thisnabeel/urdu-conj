@@ -4840,10 +4840,10 @@ var app = (function () {
 
     			attr_dev(li, "class", li_class_value = "" + (null_to_empty(/*q*/ ctx[13][0] === /*randomQuestion*/ ctx[3]["answer"][0]
     			? 'green'
-    			: 'red') + " svelte-2ck4n4"));
+    			: 'red') + " svelte-la0g9x"));
 
     			attr_dev(li, "gender", li_gender_value = /*q*/ ctx[13][1]);
-    			add_location(li, file$2, 117, 16, 2942);
+    			add_location(li, file$2, 117, 16, 2939);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -4869,7 +4869,7 @@ var app = (function () {
     			if (dirty & /*randomQuestion*/ 8 && raw_value !== (raw_value = /*q*/ ctx[13][0] + "")) li.innerHTML = raw_value;
     			if (dirty & /*randomQuestion*/ 8 && li_class_value !== (li_class_value = "" + (null_to_empty(/*q*/ ctx[13][0] === /*randomQuestion*/ ctx[3]["answer"][0]
     			? 'green'
-    			: 'red') + " svelte-2ck4n4"))) {
+    			: 'red') + " svelte-la0g9x"))) {
     				attr_dev(li, "class", li_class_value);
     			}
 
@@ -4975,28 +4975,28 @@ var app = (function () {
     			button1 = element("button");
     			button1.textContent = "Refresh";
     			attr_dev(h5, "class", "modal-title");
-    			add_location(h5, file$2, 107, 4, 2521);
+    			add_location(h5, file$2, 107, 4, 2518);
     			attr_dev(span, "aria-hidden", "true");
-    			add_location(span, file$2, 109, 8, 2659);
+    			add_location(span, file$2, 109, 8, 2656);
     			attr_dev(button0, "type", "button");
     			attr_dev(button0, "class", "close");
-    			add_location(button0, file$2, 108, 8, 2580);
+    			add_location(button0, file$2, 108, 8, 2577);
     			attr_dev(div0, "class", "modal-header");
-    			add_location(div0, file$2, 106, 4, 2490);
+    			add_location(div0, file$2, 106, 4, 2487);
     			html_tag.a = t6;
-    			add_location(hr0, file$2, 114, 8, 2808);
-    			attr_dev(ul, "class", ul_class_value = "" + (null_to_empty(!/*showColors*/ ctx[6] ? 'hide-answers' : '') + " svelte-2ck4n4"));
-    			add_location(ul, file$2, 115, 8, 2821);
+    			add_location(hr0, file$2, 114, 8, 2805);
+    			attr_dev(ul, "class", ul_class_value = "" + (null_to_empty(!/*showColors*/ ctx[6] ? 'hide-answers' : '') + " svelte-la0g9x"));
+    			add_location(ul, file$2, 115, 8, 2818);
     			attr_dev(div1, "class", "modal-body");
-    			add_location(div1, file$2, 112, 4, 2732);
-    			add_location(hr1, file$2, 125, 4, 3216);
-    			add_location(p0, file$2, 126, 4, 3225);
-    			add_location(p1, file$2, 127, 4, 3255);
+    			add_location(div1, file$2, 112, 4, 2729);
+    			add_location(hr1, file$2, 125, 4, 3213);
+    			add_location(p0, file$2, 126, 4, 3222);
+    			add_location(p1, file$2, 127, 4, 3252);
     			attr_dev(button1, "type", "button");
     			attr_dev(button1, "class", "btn btn-primary");
-    			add_location(button1, file$2, 129, 8, 3324);
+    			add_location(button1, file$2, 129, 8, 3321);
     			attr_dev(div2, "class", "modal-footer");
-    			add_location(div2, file$2, 128, 4, 3289);
+    			add_location(div2, file$2, 128, 4, 3286);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -5071,7 +5071,7 @@ var app = (function () {
     				each_blocks.length = each_value.length;
     			}
 
-    			if (dirty & /*showColors*/ 64 && ul_class_value !== (ul_class_value = "" + (null_to_empty(!/*showColors*/ ctx[6] ? 'hide-answers' : '') + " svelte-2ck4n4"))) {
+    			if (dirty & /*showColors*/ 64 && ul_class_value !== (ul_class_value = "" + (null_to_empty(!/*showColors*/ ctx[6] ? 'hide-answers' : '') + " svelte-la0g9x"))) {
     				attr_dev(ul, "class", ul_class_value);
     			}
 
@@ -5139,7 +5139,7 @@ var app = (function () {
     			button = element("button");
     			button.textContent = "Quiz";
     			attr_dev(button, "class", "btn btn-block btn-primary");
-    			add_location(button, file$2, 133, 0, 3433);
+    			add_location(button, file$2, 133, 0, 3430);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -5270,7 +5270,8 @@ var app = (function () {
     		}
 
     		$$invalidate(6, showColors = true);
-    	} // setTimeout(randomizer, 1500);
+    		setTimeout(randomizer, 1500);
+    	}
 
     	const writable_props = ['gerund', 'trans'];
 
