@@ -18,6 +18,8 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "pouchdb": "^7.2.2",
+    "pouchdb-svelte": "^7.2.2-alpha0.0.1",
     "sirv-cli": "^1.0.0",
     "sweetalert2": "^11.1.7"
   }

@@ -2,6 +2,7 @@
   import ContactCard from "./ContactCard.svelte";
   import Swal from 'sweetalert2'
   import QuizModal from "./quizModal.svelte"
+  import Words from "./words.svelte"
 
   let gerund = "khaa";
   let trans = "eating";
@@ -56,55 +57,55 @@
   </div>
 
   <hr>
-<QuizModal gerund="{gerund}" trans="{trans}"></QuizModal>
+  <QuizModal gerund="{gerund}" trans="{trans}"></QuizModal>
 
   <hr>
 
-<article class="masc">
+<article class="masc" gender="masc">
   <small>I'm {trans}</small>
   <p>Mein <b>{bones}</b>rahaa hun </p>
   <hr>
 </article>
 
-<article class="masc">
+<article class="masc" gender="masc">
   <small>He is  {trans} </small>
   <p><u>Woh</u> <b>{bones}</b>rahaa he </p>
   <hr>
 </article>
 
-<article class="masc">
+<article class="masc" gender="masc">
   <small>You are {trans} (informal) </small>
   <p>Tum <b>{bones}</b>rahey ho </p>
   <hr>
 </article>
 
 
-<article class="masc">
+<article class="masc" gender="masc">
   <small>You are {trans} (formal) </small>
   <p>Aap <b>{bones}</b>rahey hein </p>
   <hr>
 </article>
 
 
-<article class="fem">
+<article class="fem" gender="fem">
   <small>I'm {trans}</small>
   <p>Mein <b>{bones}</b>rahee hun </p>
   <hr>
 </article>
 
-<article class="fem">
+<article class="fem" gender="fem">
   <small>She is {trans} </small>
   <p><u>Woh</u> <b>{bones}</b>rahee he </p>
   <hr>
 </article>
 
-<article class="fem">
+<article class="fem" gender="fem">
   <small>You are {trans} (informal) </small>
   <p>Tum <b>{bones}</b>rahee ho </p>
   <hr>
 </article>
 
-<article class="fem">
+<article class="fem" gender="fem">
   <small>You are {trans} (formal) </small>
   <p>Aap <b>{bones}</b>raheen hein </p>
   <hr>
@@ -124,25 +125,25 @@
 </article>
 
 
-<article class="masc">
+<article class="masc" gender="masc">
   <small>I will {trans.split("ing")[0]} (1stp)</small>
   <p>Mein <b>{bones}</b>unga</p>
   <hr>
 </article>
 
-<article class="masc">
+<article class="masc" gender="masc">
   <small>He will {trans.split("ing")[0]}</small>
   <p><u>Woh</u> <b>{bones}</b>eyga</p>
   <hr>
 </article>
 
-<article class="fem">
+<article class="fem" gender="fem">
   <small>I will {trans.split("ing")[0]}</small>
   <p>Mein <b>{bones}</b>ungi</p>
   <hr>
 </article>
 
-<article class="fem">
+<article class="fem" gender="fem">
   <small>She will {trans.split("ing")[0]}</small>
   <p><u>Woh</u> <b>{bones}</b>eygi</p>
   <hr>
@@ -186,26 +187,26 @@
   <hr>
 </article>
 
-<article class="masc">
+<article class="masc" gender="masc">
   <small>Will you {trans.split("ing")[0]}? (informal)</small>
   <p>Tum <b>{bones}</b>ogay?</p>
   <hr>
 </article>
 
-<article class="masc">
+<article class="masc" gender="masc">
   <small>Will you {trans.split("ing")[0]}? (formal)</small>
   <p>Aap <b>{bones}</b>eingey?</p>
   <hr>
 </article>
 
 
-<article class="fem">
+<article class="fem" gender="fem">
   <small>Will you {trans.split("ing")[0]}? (informal)</small>
   <p>Tum <b>{bones}</b>ogi?</p>
   <hr>
 </article>
 
-<article class="fem">
+<article class="fem" gender="fem">
   <small>Will you {trans.split("ing")[0]}? (formal)</small>
   <p>Aap <b>{bones}</b>eingee?</p>
   <hr>
@@ -215,3 +216,4 @@
 
 <br>
 
+<Words></Words>

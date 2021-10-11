@@ -25,11 +25,11 @@
         showColors = false
         document.querySelectorAll('article').forEach((el, index) => {
             //do stuff with _el here
-            let answer = el.querySelector("small").innerHTML
+            let answer = [el.querySelector("small").innerHTML, el.getAttribute("gender")]
             questions.push({
                 question: el.querySelector("p").innerHTML,
                 answer: answer,
-                test: [randomAnswer(), randomAnswer(), answer]
+                test: [randomAnswer(), randomAnswer(), answer],
             })
         })
         console.log(questions)
@@ -38,17 +38,19 @@
 
     function randomAnswer(){
         let randomArticles = document.querySelectorAll('article')
-        return randomArticles[Math.floor(Math.random()*randomArticles.length)].querySelector("small").innerHTML;
+        let a = randomArticles[Math.floor(Math.random()*randomArticles.length)]
+        return [a.querySelector("small").innerHTML, a.getAttribute("gender")];
     }
 
     function checkAnswer(q, a){
+        console.log(q, a)
         if (q == a) {
             correct += 1
         } else {
             incorrect += 1
         }
         showColors = true
-        setTimeout(randomizer, 1500);
+        // setTimeout(randomizer, 1500);
         
     }
 
@@ -77,7 +79,8 @@
     }
 
     .red {
-        background-color: #ffb0b0;
+        /* background-color: #ffb0b0; */
+        border: 6px dashed #ed3838;
     }
 
     .green, .red {
@@ -87,6 +90,16 @@
     .hide-answers .green, 
     .hide-answers .red {
         background-color: transparent;
+    }
+
+    [gender="masc"] {
+        color: #2b87ff;
+        border-left: 16px solid #2b87ff;
+    }
+
+    [gender="fem"] {
+        color: #ff2b50;
+        border-left: 16px solid #ff93a6;
     }
 </style>
  
@@ -102,8 +115,10 @@
         <hr>
         <ul class="{!showColors ? 'hide-answers': ''}">
             {#each shuffle(randomQuestion["test"]) as q}
-                <li on:click="{checkAnswer(q, randomQuestion["answer"])}" 
-                    class="{q === randomQuestion["answer"] ? 'green': 'red'}">{@html q}</li>
+                <li on:click="{checkAnswer(q[0], randomQuestion["answer"][0])}" 
+                    class="{q[0] === randomQuestion["answer"][0] ? 'green': 'red'}"
+                    gender="{q[1]}"
+                    >{@html q[0]}</li>
             {/each}
         </ul>
     </div>
