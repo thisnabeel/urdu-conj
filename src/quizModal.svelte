@@ -90,6 +90,7 @@
     .hide-answers .green, 
     .hide-answers .red {
         background-color: transparent;
+        border: none;
     }
 
     [gender="masc"] {
