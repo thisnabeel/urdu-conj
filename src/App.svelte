@@ -112,14 +112,14 @@
 </article>
 
 <article>
-  <small class="neutral">We're {trans} (neutral)</small>
+  <small>We're {trans}</small>
   <p>Hum <b>{bones}</b>rahey hein </p>
   <hr>
 </article>
 
 
 <article>
-  <small>They're {trans} (they/formal neutral)</small>
+  <small>They're {trans} (they/formal)</small>
   <p><u>Woh</u> <b>{bones}</b>rahey hein </p>
   <hr>
 </article>
@@ -151,38 +151,38 @@
 
 
 <article>
-  <small>We will {trans.split("ing")[0]} (neutral)</small>
+  <small>We will {trans.split("ing")[0]}</small>
   <p>Hum <b>{bones}</b>eingay</p>
   <hr>
 </article>
 
 <article>
-  <small>They/He will {trans.split("ing")[0]} (they/formal neutral)</small>
+  <small>They/He will {trans.split("ing")[0]} (they/formal)</small>
   <p><u>Woh</u> <b>{bones}</b>eingay</p>
   <hr>
 </article>
 
 
 <article>
-  <small>{trans.split("ing")[0]}! (informal neutral)</small>
+  <small>{trans.split("ing")[0]}! (informal)</small>
   <p><b>{bones}</b>o!</p>
   <hr>
 </article>
 
 <article>
-  <small>Please {trans.split("ing")[0]}! (informal neutral)</small>
+  <small>Please {trans.split("ing")[0]}! (informal)</small>
   <p><b>{bones}</b>ein!</p>
   <hr>
 </article>
 
 <article>
-  <small>{trans.split("ing")[0]}! (formal neutral)</small>
+  <small>{trans.split("ing")[0]}! (formal)</small>
   <p><b>{bones}</b>ein!</p>
   <hr>
 </article>
 
 <article>
-  <small>Please {trans.split("ing")[0]}! (formal neutral)</small>
+  <small>Please {trans.split("ing")[0]}! (formal)</small>
   <p><b>{bones}</b>ein!</p>
   <hr>
 </article>
