@@ -4,10 +4,9 @@
 
     export let gerund
     export let trans
-
+    export let phrases
 
     let questions = []
-    let randomQuestion = ""
     let correct = 0
     let incorrect = 0
     let showColors = false
@@ -20,26 +19,53 @@
 
     }
 
-    function randomizer(){
-        questions = []
-        showColors = false
-        document.querySelectorAll('article').forEach((el, index) => {
-            //do stuff with _el here
-            let answer = [el.querySelector("small").innerHTML, el.getAttribute("gender")]
-            questions.push({
-                question: el.querySelector("p").innerHTML,
-                answer: answer,
-                test: [randomAnswer(), randomAnswer(), answer],
-            })
-        })
-        console.log(questions)
-        randomQuestion = questions[Math.floor(Math.random()*questions.length)];
+
+    export let changeWord = () => {}
+
+    $: phrase = phrases[Math.floor(Math.random()*phrases.length)]
+    $: quiz = {
+        phrase: phrase["phrase"].replaceAll("~", gerund),
+        answer: convertedTrans(phrase),
+        choices: [
+            phrase,
+            randomChoice(),
+            randomChoice()
+        ]
+    }
+    
+
+    function convertedTrans(input){
+        return `${getFormalityEmoji(input["formality"])} ${getGenderEmoji(input["gender"])} ${input["trans"].replaceAll("~", trans).replaceAll("|", trans.split("ing")[0])}`
     }
 
-    function randomAnswer(){
-        let randomArticles = document.querySelectorAll('article')
-        let a = randomArticles[Math.floor(Math.random()*randomArticles.length)]
-        return [a.querySelector("small").innerHTML, a.getAttribute("gender")];
+    function getFormalityEmoji(input){
+        if (input == "informal"){
+            return "🧢"
+        } else if (input == "formal") {
+            return "🎩"
+        } else {
+            return ""
+        }
+    }
+
+    function getGenderEmoji(input){
+        if (input == "masc"){
+            return "🧔"
+        } else if (input == "fem") {
+            return "👱‍♀️"
+        } else {
+            return ""
+        }
+    }
+
+    function randomizer(){
+        showColors = false
+        changeWord()
+    }
+
+    function randomChoice(){
+        let choice = phrases[Math.floor(Math.random()*phrases.length)]
+        return choice
     }
 
     function checkAnswer(q, a){
@@ -51,7 +77,6 @@
         }
         showColors = true
         setTimeout(randomizer, 1500);
-        
     }
 
     function shuffle(array) {
@@ -113,6 +138,10 @@
         border-left: 16px dashed #000000;
         padding-left: 12px;
     }
+
+    #results {
+        padding: 30px;
+    }
 </style>
  
 <Modal bind:open={isOpen}>
@@ -123,24 +152,26 @@
         </button>
     </div>
     <div class="modal-body">
-        {@html randomQuestion["question"]}
+        {@html quiz["phrase"]}
         <hr>
         <ul class="{!showColors ? 'hide-answers': ''}">
-            {#each shuffle(randomQuestion["test"]) as q}
-                <li on:click="{checkAnswer(q[0], randomQuestion["answer"][0])}" 
-                    class="{q[0] === randomQuestion["answer"][0] ? 'green': 'red'}"
-                    gender="{q[1]}"
-                    >{@html q[0]}</li>
+            {#each shuffle(quiz["choices"]) as choice}
+                <li on:click="{checkAnswer(quiz["answer"], convertedTrans(choice))}" 
+                    class="{quiz["answer"] === convertedTrans(choice) ? 'green': 'red'}"
+                    gender="{choice["gender"]}"
+                    >{@html convertedTrans(choice)}</li>
             {/each}
         </ul>
     </div>
 
     <hr>
-    <p>Correct: {correct}</p>
-    <p>Incorrect: {incorrect}</p>
-    <div class="modal-footer">
-        <button type="button" on:click="{randomizer}" class="btn btn-primary">Refresh</button>
-    </div>
+    <section id="results">
+        <p>Correct: {correct}</p>
+        <p>Incorrect: {incorrect}</p>
+    </section>
+        <div class="modal-footer">
+            <button type="button" on:click="{randomizer}" class="btn btn-primary">Refresh</button>
+        </div>
 </Modal>
  
 <button class="btn btn-block btn-primary" on:click={openQuiz}>Quiz</button>
