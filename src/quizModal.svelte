@@ -22,14 +22,17 @@
 
     export let changeWord = () => {}
 
+    let randomChoiceA;
+    let randomChoiceB;
+
     $: phrase = phrases[Math.floor(Math.random()*phrases.length)]
     $: quiz = {
         phrase: phrase["phrase"].replaceAll("~", gerund),
         answer: convertedTrans(phrase),
         choices: [
             phrase,
-            randomChoice(),
-            randomChoice()
+            randomChoiceA,
+            randomChoiceB
         ]
     }
     
@@ -60,12 +63,17 @@
 
     function randomizer(){
         showColors = false
+        phrase = phrases[Math.floor(Math.random()*phrases.length)]
+        randomChoices()
         changeWord()
     }
 
-    function randomChoice(){
-        let choice = phrases[Math.floor(Math.random()*phrases.length)]
-        return choice
+    function randomChoices(){
+        randomChoiceA = phrases[Math.floor(Math.random()*phrases.length)]
+        randomChoiceB = phrases[Math.floor(Math.random()*phrases.length)]
+        while (randomChoiceB === randomChoiceA) {
+            randomChoiceB = phrases[Math.floor(Math.random()*phrases.length)]
+        }
     }
 
     function checkAnswer(q, a){
