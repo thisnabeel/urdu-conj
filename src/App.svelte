@@ -88,7 +88,7 @@
       gender: "fem",
       formality: "formal",
       trans: "She ~s",
-      phrase: "Woh <b>~</b>tee hein"
+      phrase: "Woh <b>~</b>teen hein"
     },
     {
       gender: "masc",
