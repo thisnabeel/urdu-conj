@@ -69,6 +69,30 @@
     {
       gender: "masc",
       formality: "informal",
+      trans: "He ~s",
+      phrase: "Woh <b>~</b>ta he "
+    },
+    {
+      gender: "fem",
+      formality: "informal",
+      trans: "She ~s",
+      phrase: "Woh <b>~</b>ti he"
+    },
+    {
+      gender: "masc",
+      formality: "formal",
+      trans: "He ~s",
+      phrase: "Woh <b>~</b>tay hein "
+    },
+    {
+      gender: "fem",
+      formality: "formal",
+      trans: "She ~s",
+      phrase: "Woh <b>~</b>tee hein"
+    },
+    {
+      gender: "masc",
+      formality: "informal",
       trans: "I will |",
       phrase: "Mein <b>~</b>unga "
     },

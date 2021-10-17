@@ -5597,7 +5597,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (192:4) {#each phrases as phrase}
+    // (216:4) {#each phrases as phrase}
     function create_each_block(ctx) {
     	let article;
     	let small;
@@ -5621,12 +5621,12 @@ var app = (function () {
     			hr = element("hr");
     			t3 = space();
     			attr_dev(small, "class", "svelte-1pfw7it");
-    			add_location(small, file, 193, 8, 3733);
-    			add_location(p, file, 194, 8, 3836);
-    			add_location(hr, file, 195, 8, 3900);
+    			add_location(small, file, 217, 8, 4217);
+    			add_location(p, file, 218, 8, 4320);
+    			add_location(hr, file, 219, 8, 4384);
     			attr_dev(article, "class", "" + (null_to_empty(/*phrase*/ ctx[20]["gender"]) + " svelte-1pfw7it"));
     			attr_dev(article, "gender", /*phrase*/ ctx[20]["gender"]);
-    			add_location(article, file, 192, 6, 3659);
+    			add_location(article, file, 216, 6, 4143);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, article, anchor);
@@ -5651,7 +5651,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(192:4) {#each phrases as phrase}",
+    		source: "(216:4) {#each phrases as phrase}",
     		ctx
     	});
 
@@ -5767,27 +5767,27 @@ var app = (function () {
     			t10 = space();
     			create_component(words_1.$$.fragment);
     			attr_dev(label, "for", "gerund");
-    			add_location(label, file, 177, 4, 3182);
+    			add_location(label, file, 201, 4, 3666);
     			attr_dev(input0, "type", "text");
     			attr_dev(input0, "id", "gerund");
     			attr_dev(input0, "placeholder", "Gerund");
-    			add_location(input0, file, 178, 4, 3221);
+    			add_location(input0, file, 202, 4, 3705);
     			attr_dev(input1, "type", "text");
     			attr_dev(input1, "id", "trans");
     			attr_dev(input1, "placeholder", "Translation");
-    			add_location(input1, file, 179, 4, 3300);
+    			add_location(input1, file, 203, 4, 3784);
     			attr_dev(button, "class", "btn-info");
-    			add_location(button, file, 180, 4, 3384);
+    			add_location(button, file, 204, 4, 3868);
     			attr_dev(div0, "class", "form-control");
-    			add_location(div0, file, 176, 2, 3151);
-    			add_location(hr0, file, 183, 2, 3453);
-    			add_location(hr1, file, 187, 2, 3593);
+    			add_location(div0, file, 200, 2, 3635);
+    			add_location(hr0, file, 207, 2, 3937);
+    			add_location(hr1, file, 211, 2, 4077);
     			attr_dev(div1, "id", "sentences");
-    			add_location(div1, file, 189, 2, 3601);
+    			add_location(div1, file, 213, 2, 4085);
     			attr_dev(div2, "id", "form");
     			attr_dev(div2, "class", "svelte-1pfw7it");
-    			add_location(div2, file, 175, 0, 3133);
-    			add_location(br, file, 203, 0, 3953);
+    			add_location(div2, file, 199, 0, 3617);
+    			add_location(br, file, 227, 0, 4437);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -5988,6 +5988,30 @@ var app = (function () {
     			formality: "informal",
     			trans: "I'm ~",
     			phrase: "Mein <b>~</b>rahee hun"
+    		},
+    		{
+    			gender: "masc",
+    			formality: "informal",
+    			trans: "He ~s",
+    			phrase: "Woh <b>~</b>ta he "
+    		},
+    		{
+    			gender: "fem",
+    			formality: "informal",
+    			trans: "She ~s",
+    			phrase: "Woh <b>~</b>ti he"
+    		},
+    		{
+    			gender: "masc",
+    			formality: "formal",
+    			trans: "He ~s",
+    			phrase: "Woh <b>~</b>tay hein "
+    		},
+    		{
+    			gender: "fem",
+    			formality: "formal",
+    			trans: "She ~s",
+    			phrase: "Woh <b>~</b>tee hein"
     		},
     		{
     			gender: "masc",
