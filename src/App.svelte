@@ -8,6 +8,7 @@
 
   let gerund = "khaa";
   let trans = "eating";
+  let transPast = "ate";
   let questions = []
 
   let sentences
@@ -39,7 +40,8 @@
       var verb = {
           _id: new Date().toISOString(),
           verb: gerund,
-          trans: trans
+          trans: trans,
+          transPast: transPast
       };
       db.put(verb, function callback(err, result) {
 
@@ -67,27 +69,81 @@
       phrase: "Mein <b>~</b>rahee hun"
     },
     {
+      gender: "neutral",
+      formality: "formal",
+      trans: "We're ~",
+      phrase: "Hum <b>~</b>rahey hein "
+    },
+    {
+      gender: "masc",
+      formality: "inform",
+      trans: "You're ~",
+      phrase: "Tum <b>~</b>rahey ho "
+    },
+    {
+      gender: "fem",
+      formality: "inform",
+      trans: "You're ~",
+      phrase: "Tum <b>~</b>rahee ho "
+    },
+    {
+      gender: "masc",
+      formality: "formal",
+      trans: "You're ~",
+      phrase: "Aap <b>~</b>rahey hein"
+    },
+    {
+      gender: "fem",
+      formality: "formal",
+      trans: "You're ~",
+      phrase: "Aap <b>~</b>rahee hein"
+    },
+    {
       gender: "masc",
       formality: "informal",
-      trans: "He ~s",
+      trans: "He's ~",
+      phrase: "Woh <b>~</b>rahaa hay"
+    },
+    {
+      gender: "fem",
+      formality: "informal",
+      trans: "She's ~",
+      phrase: "Woh <b>~</b>rahee hay"
+    },
+    {
+      gender: "masc",
+      formality: "formal",
+      trans: "He's ~",
+      phrase: "Woh <b>~</b>rahey hein"
+    },
+    {
+      gender: "fem",
+      formality: "formal",
+      trans: "She's ~",
+      phrase: "Woh <b>~</b>raheen hein"
+    },
+    {
+      gender: "masc",
+      formality: "informal",
+      trans: "He --",
       phrase: "Woh <b>~</b>ta he "
     },
     {
       gender: "fem",
       formality: "informal",
-      trans: "She ~s",
+      trans: "She --",
       phrase: "Woh <b>~</b>ti he"
     },
     {
       gender: "masc",
       formality: "formal",
-      trans: "He ~s",
+      trans: "He --",
       phrase: "Woh <b>~</b>tay hein "
     },
     {
       gender: "fem",
       formality: "formal",
-      trans: "She ~s",
+      trans: "She --",
       phrase: "Woh <b>~</b>teen hein"
     },
     {
@@ -202,6 +258,7 @@
     <label for="gerund">Gerund</label>
     <input type="text" bind:value={gerund} id="gerund" placeholder="Gerund" />
     <input type="text" bind:value={trans}  id="trans" placeholder="Translation"  />
+    <input type="text" bind:value={transPast}  id="transPast" placeholder="Past Tense"  />
     <button class="btn-info" on:click="{addVerb}">+</button>
   </div>
 
@@ -215,7 +272,12 @@
 
     {#each phrases as phrase}
       <article class="{phrase["gender"]}" gender="{phrase["gender"]}" >
-        <small>{phrase["trans"].replaceAll("~", trans).replaceAll("|", trans.split("ing")[0])}</small>
+        <small>{
+          phrase["trans"].replaceAll("~", trans)
+          .replaceAll("|", trans.split("ing")[0])
+          .replaceAll("<-", transPast)
+          .replaceAll("--", trans.split("ing")[0] + "s")
+        }</small>
         <p>{@html phrase["phrase"].replaceAll("~", gerund)}</p>
         <hr>
       </article>
@@ -227,4 +289,4 @@
 
 <br>
 
-<Words verbs={verbs} bind:changeGerund={gerund} bind:changeTrans={trans} bind:updateVerbs={verbs} bind:this={words}></Words>
+<Words verbs={verbs} bind:changeGerund={gerund} bind:changeTrans={trans} bind:changeTransPast={transPast} bind:updateVerbs={verbs} bind:this={words}></Words>

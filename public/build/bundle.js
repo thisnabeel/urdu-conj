@@ -4583,14 +4583,14 @@ var app = (function () {
 
     function get_each_context$2(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[20] = list[i];
+    	child_ctx[21] = list[i];
     	return child_ctx;
     }
 
-    // (166:12) {#each shuffle(quiz["choices"]) as choice}
+    // (171:12) {#each shuffle(quiz["choices"]) as choice}
     function create_each_block$2(ctx) {
     	let li;
-    	let raw_value = /*convertedTrans*/ ctx[8](/*choice*/ ctx[20]) + "";
+    	let raw_value = /*convertedTrans*/ ctx[8](/*choice*/ ctx[21]) + "";
     	let li_class_value;
     	let li_gender_value;
     	let mounted;
@@ -4600,12 +4600,12 @@ var app = (function () {
     		c: function create() {
     			li = element("li");
 
-    			attr_dev(li, "class", li_class_value = "" + (null_to_empty(/*quiz*/ ctx[6]["answer"] === /*convertedTrans*/ ctx[8](/*choice*/ ctx[20])
+    			attr_dev(li, "class", li_class_value = "" + (null_to_empty(/*quiz*/ ctx[6]["answer"] === /*convertedTrans*/ ctx[8](/*choice*/ ctx[21])
     			? 'green'
     			: 'red') + " svelte-k1wy03"));
 
-    			attr_dev(li, "gender", li_gender_value = /*choice*/ ctx[20]["gender"]);
-    			add_location(li, file$2, 166, 16, 3802);
+    			attr_dev(li, "gender", li_gender_value = /*choice*/ ctx[21]["gender"]);
+    			add_location(li, file$2, 171, 16, 3954);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -4616,7 +4616,7 @@ var app = (function () {
     					li,
     					"click",
     					function () {
-    						if (is_function(/*checkAnswer*/ ctx[10](/*quiz*/ ctx[6]["answer"], /*convertedTrans*/ ctx[8](/*choice*/ ctx[20])))) /*checkAnswer*/ ctx[10](/*quiz*/ ctx[6]["answer"], /*convertedTrans*/ ctx[8](/*choice*/ ctx[20])).apply(this, arguments);
+    						if (is_function(/*checkAnswer*/ ctx[10](/*quiz*/ ctx[6]["answer"], /*convertedTrans*/ ctx[8](/*choice*/ ctx[21])))) /*checkAnswer*/ ctx[10](/*quiz*/ ctx[6]["answer"], /*convertedTrans*/ ctx[8](/*choice*/ ctx[21])).apply(this, arguments);
     					},
     					false,
     					false,
@@ -4628,14 +4628,14 @@ var app = (function () {
     		},
     		p: function update(new_ctx, dirty) {
     			ctx = new_ctx;
-    			if (dirty & /*quiz*/ 64 && raw_value !== (raw_value = /*convertedTrans*/ ctx[8](/*choice*/ ctx[20]) + "")) li.innerHTML = raw_value;
-    			if (dirty & /*quiz*/ 64 && li_class_value !== (li_class_value = "" + (null_to_empty(/*quiz*/ ctx[6]["answer"] === /*convertedTrans*/ ctx[8](/*choice*/ ctx[20])
+    			if (dirty & /*quiz*/ 64 && raw_value !== (raw_value = /*convertedTrans*/ ctx[8](/*choice*/ ctx[21]) + "")) li.innerHTML = raw_value;
+    			if (dirty & /*quiz*/ 64 && li_class_value !== (li_class_value = "" + (null_to_empty(/*quiz*/ ctx[6]["answer"] === /*convertedTrans*/ ctx[8](/*choice*/ ctx[21])
     			? 'green'
     			: 'red') + " svelte-k1wy03"))) {
     				attr_dev(li, "class", li_class_value);
     			}
 
-    			if (dirty & /*quiz*/ 64 && li_gender_value !== (li_gender_value = /*choice*/ ctx[20]["gender"])) {
+    			if (dirty & /*quiz*/ 64 && li_gender_value !== (li_gender_value = /*choice*/ ctx[21]["gender"])) {
     				attr_dev(li, "gender", li_gender_value);
     			}
     		},
@@ -4650,14 +4650,14 @@ var app = (function () {
     		block,
     		id: create_each_block$2.name,
     		type: "each",
-    		source: "(166:12) {#each shuffle(quiz[\\\"choices\\\"]) as choice}",
+    		source: "(171:12) {#each shuffle(quiz[\\\"choices\\\"]) as choice}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (155:0) <Modal bind:open={isOpen}>
+    // (160:0) <Modal bind:open={isOpen}>
     function create_default_slot(ctx) {
     	let div0;
     	let h5;
@@ -4739,31 +4739,31 @@ var app = (function () {
     			button1 = element("button");
     			button1.textContent = "Refresh";
     			attr_dev(h5, "class", "modal-title");
-    			add_location(h5, file$2, 156, 4, 3395);
+    			add_location(h5, file$2, 161, 4, 3547);
     			attr_dev(span, "aria-hidden", "true");
-    			add_location(span, file$2, 158, 8, 3533);
+    			add_location(span, file$2, 163, 8, 3685);
     			attr_dev(button0, "type", "button");
     			attr_dev(button0, "class", "close");
-    			add_location(button0, file$2, 157, 8, 3454);
+    			add_location(button0, file$2, 162, 8, 3606);
     			attr_dev(div0, "class", "modal-header");
-    			add_location(div0, file$2, 155, 4, 3364);
+    			add_location(div0, file$2, 160, 4, 3516);
     			html_tag.a = t6;
-    			add_location(hr0, file$2, 163, 8, 3670);
+    			add_location(hr0, file$2, 168, 8, 3822);
     			attr_dev(ul, "class", ul_class_value = "" + (null_to_empty(!/*showColors*/ ctx[5] ? 'hide-answers' : '') + " svelte-k1wy03"));
-    			add_location(ul, file$2, 164, 8, 3683);
+    			add_location(ul, file$2, 169, 8, 3835);
     			attr_dev(div1, "class", "modal-body");
-    			add_location(div1, file$2, 161, 4, 3606);
-    			add_location(hr1, file$2, 174, 4, 4116);
-    			add_location(p0, file$2, 176, 8, 4156);
-    			add_location(p1, file$2, 177, 8, 4190);
+    			add_location(div1, file$2, 166, 4, 3758);
+    			add_location(hr1, file$2, 179, 4, 4268);
+    			add_location(p0, file$2, 181, 8, 4308);
+    			add_location(p1, file$2, 182, 8, 4342);
     			attr_dev(section, "id", "results");
     			attr_dev(section, "class", "svelte-k1wy03");
-    			add_location(section, file$2, 175, 4, 4125);
+    			add_location(section, file$2, 180, 4, 4277);
     			attr_dev(button1, "type", "button");
     			attr_dev(button1, "class", "btn btn-primary");
-    			add_location(button1, file$2, 180, 12, 4282);
+    			add_location(button1, file$2, 185, 12, 4434);
     			attr_dev(div2, "class", "modal-footer");
-    			add_location(div2, file$2, 179, 8, 4243);
+    			add_location(div2, file$2, 184, 8, 4395);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -4803,7 +4803,7 @@ var app = (function () {
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(button0, "click", /*click_handler*/ ctx[16], false, false, false),
+    					listen_dev(button0, "click", /*click_handler*/ ctx[17], false, false, false),
     					listen_dev(button1, "click", /*randomizer*/ ctx[9], false, false, false)
     				];
 
@@ -4866,7 +4866,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(155:0) <Modal bind:open={isOpen}>",
+    		source: "(160:0) <Modal bind:open={isOpen}>",
     		ctx
     	});
 
@@ -4883,7 +4883,7 @@ var app = (function () {
     	let dispose;
 
     	function modal_open_binding(value) {
-    		/*modal_open_binding*/ ctx[17](value);
+    		/*modal_open_binding*/ ctx[18](value);
     	}
 
     	let modal_props = {
@@ -4905,7 +4905,7 @@ var app = (function () {
     			button = element("button");
     			button.textContent = "Quiz";
     			attr_dev(button, "class", "btn btn-block btn-primary");
-    			add_location(button, file$2, 184, 0, 4395);
+    			add_location(button, file$2, 189, 0, 4547);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -4924,7 +4924,7 @@ var app = (function () {
     		p: function update(ctx, [dirty]) {
     			const modal_changes = {};
 
-    			if (dirty & /*$$scope, incorrect, correct, showColors, quiz, isOpen, trans, gerund*/ 8388735) {
+    			if (dirty & /*$$scope, incorrect, correct, showColors, quiz, isOpen, trans, gerund*/ 16777343) {
     				modal_changes.$$scope = { dirty, ctx };
     			}
 
@@ -5010,6 +5010,7 @@ var app = (function () {
     	let isOpen = false;
     	let { gerund } = $$props;
     	let { trans } = $$props;
+    	let { transPast } = $$props;
     	let { phrases } = $$props;
     	let questions = [];
     	let correct = 0;
@@ -5031,22 +5032,23 @@ var app = (function () {
     	let randomChoiceB;
 
     	function convertedTrans(input) {
-    		return `${getFormalityEmoji(input["formality"])} ${getGenderEmoji(input["gender"])} ${input["trans"].replaceAll("~", trans).replaceAll("|", trans.split("ing")[0])}`;
+    		let np = input["trans"].replaceAll("~", trans).replaceAll("|", trans.split("ing")[0]).replaceAll("<-", transPast).replaceAll("--", trans.split("ing")[0] + "s");
+    		return `${getFormalityEmoji(input["formality"])} ${getGenderEmoji(input["gender"])} ${np}`;
     	}
 
     	function randomizer() {
     		$$invalidate(5, showColors = false);
-    		$$invalidate(15, phrase = phrases[Math.floor(Math.random() * phrases.length)]);
+    		$$invalidate(16, phrase = phrases[Math.floor(Math.random() * phrases.length)]);
     		randomChoices();
     		changeWord();
     	}
 
     	function randomChoices() {
-    		$$invalidate(13, randomChoiceA = phrases[Math.floor(Math.random() * phrases.length)]);
-    		$$invalidate(14, randomChoiceB = phrases[Math.floor(Math.random() * phrases.length)]);
+    		$$invalidate(14, randomChoiceA = phrases[Math.floor(Math.random() * phrases.length)]);
+    		$$invalidate(15, randomChoiceB = phrases[Math.floor(Math.random() * phrases.length)]);
 
     		while (randomChoiceB === randomChoiceA) {
-    			$$invalidate(14, randomChoiceB = phrases[Math.floor(Math.random() * phrases.length)]);
+    			$$invalidate(15, randomChoiceB = phrases[Math.floor(Math.random() * phrases.length)]);
     		}
     	}
 
@@ -5063,7 +5065,7 @@ var app = (function () {
     		setTimeout(randomizer, 1500);
     	}
 
-    	const writable_props = ['gerund', 'trans', 'phrases', 'changeWord'];
+    	const writable_props = ['gerund', 'trans', 'transPast', 'phrases', 'changeWord'];
 
     	Object.keys($$props).forEach(key => {
     		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console_1$2.warn(`<QuizModal> was created with unknown prop '${key}'`);
@@ -5079,8 +5081,9 @@ var app = (function () {
     	$$self.$$set = $$props => {
     		if ('gerund' in $$props) $$invalidate(0, gerund = $$props.gerund);
     		if ('trans' in $$props) $$invalidate(1, trans = $$props.trans);
-    		if ('phrases' in $$props) $$invalidate(11, phrases = $$props.phrases);
-    		if ('changeWord' in $$props) $$invalidate(12, changeWord = $$props.changeWord);
+    		if ('transPast' in $$props) $$invalidate(11, transPast = $$props.transPast);
+    		if ('phrases' in $$props) $$invalidate(12, phrases = $$props.phrases);
+    		if ('changeWord' in $$props) $$invalidate(13, changeWord = $$props.changeWord);
     	};
 
     	$$self.$capture_state = () => ({
@@ -5088,6 +5091,7 @@ var app = (function () {
     		isOpen,
     		gerund,
     		trans,
+    		transPast,
     		phrases,
     		questions,
     		correct,
@@ -5112,15 +5116,16 @@ var app = (function () {
     		if ('isOpen' in $$props) $$invalidate(2, isOpen = $$props.isOpen);
     		if ('gerund' in $$props) $$invalidate(0, gerund = $$props.gerund);
     		if ('trans' in $$props) $$invalidate(1, trans = $$props.trans);
-    		if ('phrases' in $$props) $$invalidate(11, phrases = $$props.phrases);
+    		if ('transPast' in $$props) $$invalidate(11, transPast = $$props.transPast);
+    		if ('phrases' in $$props) $$invalidate(12, phrases = $$props.phrases);
     		if ('questions' in $$props) questions = $$props.questions;
     		if ('correct' in $$props) $$invalidate(3, correct = $$props.correct);
     		if ('incorrect' in $$props) $$invalidate(4, incorrect = $$props.incorrect);
     		if ('showColors' in $$props) $$invalidate(5, showColors = $$props.showColors);
-    		if ('changeWord' in $$props) $$invalidate(12, changeWord = $$props.changeWord);
-    		if ('randomChoiceA' in $$props) $$invalidate(13, randomChoiceA = $$props.randomChoiceA);
-    		if ('randomChoiceB' in $$props) $$invalidate(14, randomChoiceB = $$props.randomChoiceB);
-    		if ('phrase' in $$props) $$invalidate(15, phrase = $$props.phrase);
+    		if ('changeWord' in $$props) $$invalidate(13, changeWord = $$props.changeWord);
+    		if ('randomChoiceA' in $$props) $$invalidate(14, randomChoiceA = $$props.randomChoiceA);
+    		if ('randomChoiceB' in $$props) $$invalidate(15, randomChoiceB = $$props.randomChoiceB);
+    		if ('phrase' in $$props) $$invalidate(16, phrase = $$props.phrase);
     		if ('quiz' in $$props) $$invalidate(6, quiz = $$props.quiz);
     	};
 
@@ -5129,11 +5134,11 @@ var app = (function () {
     	}
 
     	$$self.$$.update = () => {
-    		if ($$self.$$.dirty & /*phrases*/ 2048) {
-    			$$invalidate(15, phrase = phrases[Math.floor(Math.random() * phrases.length)]);
+    		if ($$self.$$.dirty & /*phrases*/ 4096) {
+    			$$invalidate(16, phrase = phrases[Math.floor(Math.random() * phrases.length)]);
     		}
 
-    		if ($$self.$$.dirty & /*phrase, gerund, randomChoiceA, randomChoiceB*/ 57345) {
+    		if ($$self.$$.dirty & /*phrase, gerund, randomChoiceA, randomChoiceB*/ 114689) {
     			$$invalidate(6, quiz = {
     				phrase: phrase["phrase"].replaceAll("~", gerund),
     				answer: convertedTrans(phrase),
@@ -5154,6 +5159,7 @@ var app = (function () {
     		convertedTrans,
     		randomizer,
     		checkAnswer,
+    		transPast,
     		phrases,
     		changeWord,
     		randomChoiceA,
@@ -5171,8 +5177,9 @@ var app = (function () {
     		init(this, options, instance$2, create_fragment$2, safe_not_equal, {
     			gerund: 0,
     			trans: 1,
-    			phrases: 11,
-    			changeWord: 12
+    			transPast: 11,
+    			phrases: 12,
+    			changeWord: 13
     		});
 
     		dispatch_dev("SvelteRegisterComponent", {
@@ -5193,7 +5200,11 @@ var app = (function () {
     			console_1$2.warn("<QuizModal> was created without expected prop 'trans'");
     		}
 
-    		if (/*phrases*/ ctx[11] === undefined && !('phrases' in props)) {
+    		if (/*transPast*/ ctx[11] === undefined && !('transPast' in props)) {
+    			console_1$2.warn("<QuizModal> was created without expected prop 'transPast'");
+    		}
+
+    		if (/*phrases*/ ctx[12] === undefined && !('phrases' in props)) {
     			console_1$2.warn("<QuizModal> was created without expected prop 'phrases'");
     		}
     	}
@@ -5211,6 +5222,14 @@ var app = (function () {
     	}
 
     	set trans(value) {
+    		throw new Error("<QuizModal>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	get transPast() {
+    		throw new Error("<QuizModal>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set transPast(value) {
     		throw new Error("<QuizModal>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
     	}
 
@@ -5238,19 +5257,20 @@ var app = (function () {
 
     function get_each_context$1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[8] = list[i];
+    	child_ctx[9] = list[i];
     	return child_ctx;
     }
 
-    // (77:4) {#each verbs as verb}
+    // (80:4) {#each verbs as verb}
     function create_each_block$1(ctx) {
     	let li;
     	let span;
     	let t1;
-    	let t2_value = /*verb*/ ctx[8]["doc"]["verb"] + "";
+    	let t2_value = /*verb*/ ctx[9]["doc"]["verb"] + "";
     	let t2;
     	let li_gerund_value;
     	let li_trans_value;
+    	let li_transpast_value;
     	let mounted;
     	let dispose;
 
@@ -5262,11 +5282,12 @@ var app = (function () {
     			t1 = space();
     			t2 = text(t2_value);
     			attr_dev(span, "class", "svelte-1f9t5s9");
-    			add_location(span, file$1, 78, 12, 1642);
-    			attr_dev(li, "gerund", li_gerund_value = /*verb*/ ctx[8]["doc"]["verb"]);
-    			attr_dev(li, "trans", li_trans_value = /*verb*/ ctx[8]["doc"]["trans"]);
+    			add_location(span, file$1, 81, 12, 1821);
+    			attr_dev(li, "gerund", li_gerund_value = /*verb*/ ctx[9]["doc"]["verb"]);
+    			attr_dev(li, "trans", li_trans_value = /*verb*/ ctx[9]["doc"]["trans"]);
+    			attr_dev(li, "transpast", li_transpast_value = /*verb*/ ctx[9]["doc"]["transPast"]);
     			attr_dev(li, "class", "svelte-1f9t5s9");
-    			add_location(li, file$1, 77, 8, 1500);
+    			add_location(li, file$1, 80, 8, 1616);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -5280,7 +5301,7 @@ var app = (function () {
     						span,
     						"click",
     						function () {
-    							if (is_function(/*removeWord*/ ctx[2](/*verb*/ ctx[8]["doc"]["_id"]))) /*removeWord*/ ctx[2](/*verb*/ ctx[8]["doc"]["_id"]).apply(this, arguments);
+    							if (is_function(/*removeWord*/ ctx[2](/*verb*/ ctx[9]["doc"]["_id"]))) /*removeWord*/ ctx[2](/*verb*/ ctx[9]["doc"]["_id"]).apply(this, arguments);
     						},
     						false,
     						false,
@@ -5290,7 +5311,7 @@ var app = (function () {
     						li,
     						"click",
     						function () {
-    							if (is_function(/*populateMain*/ ctx[1](/*verb*/ ctx[8]["doc"]["verb"], /*verb*/ ctx[8]["doc"]["trans"]))) /*populateMain*/ ctx[1](/*verb*/ ctx[8]["doc"]["verb"], /*verb*/ ctx[8]["doc"]["trans"]).apply(this, arguments);
+    							if (is_function(/*populateMain*/ ctx[1](/*verb*/ ctx[9]["doc"]["verb"], /*verb*/ ctx[9]["doc"]["trans"], /*verb*/ ctx[9]["doc"]["transPast"]))) /*populateMain*/ ctx[1](/*verb*/ ctx[9]["doc"]["verb"], /*verb*/ ctx[9]["doc"]["trans"], /*verb*/ ctx[9]["doc"]["transPast"]).apply(this, arguments);
     						},
     						false,
     						false,
@@ -5303,14 +5324,18 @@ var app = (function () {
     		},
     		p: function update(new_ctx, dirty) {
     			ctx = new_ctx;
-    			if (dirty & /*verbs*/ 1 && t2_value !== (t2_value = /*verb*/ ctx[8]["doc"]["verb"] + "")) set_data_dev(t2, t2_value);
+    			if (dirty & /*verbs*/ 1 && t2_value !== (t2_value = /*verb*/ ctx[9]["doc"]["verb"] + "")) set_data_dev(t2, t2_value);
 
-    			if (dirty & /*verbs*/ 1 && li_gerund_value !== (li_gerund_value = /*verb*/ ctx[8]["doc"]["verb"])) {
+    			if (dirty & /*verbs*/ 1 && li_gerund_value !== (li_gerund_value = /*verb*/ ctx[9]["doc"]["verb"])) {
     				attr_dev(li, "gerund", li_gerund_value);
     			}
 
-    			if (dirty & /*verbs*/ 1 && li_trans_value !== (li_trans_value = /*verb*/ ctx[8]["doc"]["trans"])) {
+    			if (dirty & /*verbs*/ 1 && li_trans_value !== (li_trans_value = /*verb*/ ctx[9]["doc"]["trans"])) {
     				attr_dev(li, "trans", li_trans_value);
+    			}
+
+    			if (dirty & /*verbs*/ 1 && li_transpast_value !== (li_transpast_value = /*verb*/ ctx[9]["doc"]["transPast"])) {
+    				attr_dev(li, "transpast", li_transpast_value);
     			}
     		},
     		d: function destroy(detaching) {
@@ -5324,7 +5349,7 @@ var app = (function () {
     		block,
     		id: create_each_block$1.name,
     		type: "each",
-    		source: "(77:4) {#each verbs as verb}",
+    		source: "(80:4) {#each verbs as verb}",
     		ctx
     	});
 
@@ -5351,7 +5376,7 @@ var app = (function () {
 
     			attr_dev(ul, "id", "words");
     			attr_dev(ul, "class", "svelte-1f9t5s9");
-    			add_location(ul, file$1, 75, 0, 1450);
+    			add_location(ul, file$1, 78, 0, 1566);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -5413,11 +5438,13 @@ var app = (function () {
     	let { verbs } = $$props;
     	let { changeGerund } = $$props;
     	let { changeTrans } = $$props;
+    	let { changeTransPast } = $$props;
     	let { updateVerbs } = $$props;
 
-    	function populateMain(gerund, trans) {
+    	function populateMain(gerund, trans, transPast) {
     		$$invalidate(3, changeGerund = gerund);
     		$$invalidate(4, changeTrans = trans);
+    		$$invalidate(5, changeTransPast = transPast);
     	}
 
     	function getVerbs() {
@@ -5436,7 +5463,7 @@ var app = (function () {
     	function randomWord() {
     		let verb = verbs[Math.floor(Math.random() * verbs.length)];
     		console.log(verb);
-    		populateMain(verb["doc"]["verb"], verb["doc"]["trans"]);
+    		populateMain(verb["doc"]["verb"], verb["doc"]["trans"], verb["doc"]["transPast"]);
     	}
 
     	function removeWord(id) {
@@ -5450,7 +5477,7 @@ var app = (function () {
     		});
     	}
 
-    	const writable_props = ['verbs', 'changeGerund', 'changeTrans', 'updateVerbs'];
+    	const writable_props = ['verbs', 'changeGerund', 'changeTrans', 'changeTransPast', 'updateVerbs'];
 
     	Object.keys($$props).forEach(key => {
     		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console_1$1.warn(`<Words> was created with unknown prop '${key}'`);
@@ -5460,13 +5487,15 @@ var app = (function () {
     		if ('verbs' in $$props) $$invalidate(0, verbs = $$props.verbs);
     		if ('changeGerund' in $$props) $$invalidate(3, changeGerund = $$props.changeGerund);
     		if ('changeTrans' in $$props) $$invalidate(4, changeTrans = $$props.changeTrans);
-    		if ('updateVerbs' in $$props) $$invalidate(5, updateVerbs = $$props.updateVerbs);
+    		if ('changeTransPast' in $$props) $$invalidate(5, changeTransPast = $$props.changeTransPast);
+    		if ('updateVerbs' in $$props) $$invalidate(6, updateVerbs = $$props.updateVerbs);
     	};
 
     	$$self.$capture_state = () => ({
     		verbs,
     		changeGerund,
     		changeTrans,
+    		changeTransPast,
     		updateVerbs,
     		populateMain,
     		getVerbs,
@@ -5478,7 +5507,8 @@ var app = (function () {
     		if ('verbs' in $$props) $$invalidate(0, verbs = $$props.verbs);
     		if ('changeGerund' in $$props) $$invalidate(3, changeGerund = $$props.changeGerund);
     		if ('changeTrans' in $$props) $$invalidate(4, changeTrans = $$props.changeTrans);
-    		if ('updateVerbs' in $$props) $$invalidate(5, updateVerbs = $$props.updateVerbs);
+    		if ('changeTransPast' in $$props) $$invalidate(5, changeTransPast = $$props.changeTransPast);
+    		if ('updateVerbs' in $$props) $$invalidate(6, updateVerbs = $$props.updateVerbs);
     	};
 
     	if ($$props && "$$inject" in $$props) {
@@ -5491,6 +5521,7 @@ var app = (function () {
     		removeWord,
     		changeGerund,
     		changeTrans,
+    		changeTransPast,
     		updateVerbs,
     		getVerbs,
     		randomWord
@@ -5505,9 +5536,10 @@ var app = (function () {
     			verbs: 0,
     			changeGerund: 3,
     			changeTrans: 4,
-    			updateVerbs: 5,
-    			getVerbs: 6,
-    			randomWord: 7
+    			changeTransPast: 5,
+    			updateVerbs: 6,
+    			getVerbs: 7,
+    			randomWord: 8
     		});
 
     		dispatch_dev("SvelteRegisterComponent", {
@@ -5532,7 +5564,11 @@ var app = (function () {
     			console_1$1.warn("<Words> was created without expected prop 'changeTrans'");
     		}
 
-    		if (/*updateVerbs*/ ctx[5] === undefined && !('updateVerbs' in props)) {
+    		if (/*changeTransPast*/ ctx[5] === undefined && !('changeTransPast' in props)) {
+    			console_1$1.warn("<Words> was created without expected prop 'changeTransPast'");
+    		}
+
+    		if (/*updateVerbs*/ ctx[6] === undefined && !('updateVerbs' in props)) {
     			console_1$1.warn("<Words> was created without expected prop 'updateVerbs'");
     		}
     	}
@@ -5561,6 +5597,14 @@ var app = (function () {
     		throw new Error("<Words>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
     	}
 
+    	get changeTransPast() {
+    		throw new Error("<Words>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set changeTransPast(value) {
+    		throw new Error("<Words>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
     	get updateVerbs() {
     		throw new Error("<Words>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
     	}
@@ -5570,7 +5614,7 @@ var app = (function () {
     	}
 
     	get getVerbs() {
-    		return this.$$.ctx[6];
+    		return this.$$.ctx[7];
     	}
 
     	set getVerbs(value) {
@@ -5578,7 +5622,7 @@ var app = (function () {
     	}
 
     	get randomWord() {
-    		return this.$$.ctx[7];
+    		return this.$$.ctx[8];
     	}
 
     	set randomWord(value) {
@@ -5593,19 +5637,19 @@ var app = (function () {
 
     function get_each_context(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[20] = list[i];
+    	child_ctx[23] = list[i];
     	return child_ctx;
     }
 
-    // (216:4) {#each phrases as phrase}
+    // (273:4) {#each phrases as phrase}
     function create_each_block(ctx) {
     	let article;
     	let small;
-    	let t0_value = /*phrase*/ ctx[20]["trans"].replaceAll("~", /*trans*/ ctx[3]).replaceAll("|", /*trans*/ ctx[3].split("ing")[0]) + "";
+    	let t0_value = /*phrase*/ ctx[23]["trans"].replaceAll("~", /*trans*/ ctx[3]).replaceAll("|", /*trans*/ ctx[3].split("ing")[0]).replaceAll("<-", /*transPast*/ ctx[4]).replaceAll("--", /*trans*/ ctx[3].split("ing")[0] + "s") + "";
     	let t0;
     	let t1;
     	let p;
-    	let raw_value = /*phrase*/ ctx[20]["phrase"].replaceAll("~", /*gerund*/ ctx[0]) + "";
+    	let raw_value = /*phrase*/ ctx[23]["phrase"].replaceAll("~", /*gerund*/ ctx[0]) + "";
     	let t2;
     	let hr;
     	let t3;
@@ -5621,12 +5665,12 @@ var app = (function () {
     			hr = element("hr");
     			t3 = space();
     			attr_dev(small, "class", "svelte-1pfw7it");
-    			add_location(small, file, 217, 8, 4217);
-    			add_location(p, file, 218, 8, 4320);
-    			add_location(hr, file, 219, 8, 4384);
-    			attr_dev(article, "class", "" + (null_to_empty(/*phrase*/ ctx[20]["gender"]) + " svelte-1pfw7it"));
-    			attr_dev(article, "gender", /*phrase*/ ctx[20]["gender"]);
-    			add_location(article, file, 216, 6, 4143);
+    			add_location(small, file, 274, 8, 5494);
+    			add_location(p, file, 280, 8, 5724);
+    			add_location(hr, file, 281, 8, 5788);
+    			attr_dev(article, "class", "" + (null_to_empty(/*phrase*/ ctx[23]["gender"]) + " svelte-1pfw7it"));
+    			attr_dev(article, "gender", /*phrase*/ ctx[23]["gender"]);
+    			add_location(article, file, 273, 6, 5420);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, article, anchor);
@@ -5640,8 +5684,8 @@ var app = (function () {
     			append_dev(article, t3);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*trans*/ 8 && t0_value !== (t0_value = /*phrase*/ ctx[20]["trans"].replaceAll("~", /*trans*/ ctx[3]).replaceAll("|", /*trans*/ ctx[3].split("ing")[0]) + "")) set_data_dev(t0, t0_value);
-    			if (dirty & /*gerund*/ 1 && raw_value !== (raw_value = /*phrase*/ ctx[20]["phrase"].replaceAll("~", /*gerund*/ ctx[0]) + "")) p.innerHTML = raw_value;		},
+    			if (dirty & /*trans, transPast*/ 24 && t0_value !== (t0_value = /*phrase*/ ctx[23]["trans"].replaceAll("~", /*trans*/ ctx[3]).replaceAll("|", /*trans*/ ctx[3].split("ing")[0]).replaceAll("<-", /*transPast*/ ctx[4]).replaceAll("--", /*trans*/ ctx[3].split("ing")[0] + "s") + "")) set_data_dev(t0, t0_value);
+    			if (dirty & /*gerund*/ 1 && raw_value !== (raw_value = /*phrase*/ ctx[23]["phrase"].replaceAll("~", /*gerund*/ ctx[0]) + "")) p.innerHTML = raw_value;		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(article);
     		}
@@ -5651,7 +5695,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(216:4) {#each phrases as phrase}",
+    		source: "(273:4) {#each phrases as phrase}",
     		ctx
     	});
 
@@ -5667,36 +5711,39 @@ var app = (function () {
     	let t2;
     	let input1;
     	let t3;
+    	let input2;
+    	let t4;
     	let button;
-    	let t5;
-    	let hr0;
     	let t6;
-    	let quizmodal;
+    	let hr0;
     	let t7;
-    	let hr1;
+    	let quizmodal;
     	let t8;
-    	let div1;
+    	let hr1;
     	let t9;
-    	let br;
+    	let div1;
     	let t10;
+    	let br;
+    	let t11;
     	let words_1;
     	let updating_changeGerund;
     	let updating_changeTrans;
+    	let updating_changeTransPast;
     	let updating_updateVerbs;
     	let current;
     	let mounted;
     	let dispose;
 
     	let quizmodal_props = {
-    		phrases: /*phrases*/ ctx[7],
+    		phrases: /*phrases*/ ctx[8],
     		gerund: /*gerund*/ ctx[0],
     		trans: /*trans*/ ctx[3],
-    		changeWord: /*func*/ ctx[10]
+    		changeWord: /*func*/ ctx[12]
     	};
 
     	quizmodal = new QuizModal({ props: quizmodal_props, $$inline: true });
-    	/*quizmodal_binding*/ ctx[11](quizmodal);
-    	let each_value = /*phrases*/ ctx[7];
+    	/*quizmodal_binding*/ ctx[13](quizmodal);
+    	let each_value = /*phrases*/ ctx[8];
     	validate_each_argument(each_value);
     	let each_blocks = [];
 
@@ -5705,18 +5752,22 @@ var app = (function () {
     	}
 
     	function words_1_changeGerund_binding(value) {
-    		/*words_1_changeGerund_binding*/ ctx[12](value);
+    		/*words_1_changeGerund_binding*/ ctx[14](value);
     	}
 
     	function words_1_changeTrans_binding(value) {
-    		/*words_1_changeTrans_binding*/ ctx[13](value);
+    		/*words_1_changeTrans_binding*/ ctx[15](value);
+    	}
+
+    	function words_1_changeTransPast_binding(value) {
+    		/*words_1_changeTransPast_binding*/ ctx[16](value);
     	}
 
     	function words_1_updateVerbs_binding(value) {
-    		/*words_1_updateVerbs_binding*/ ctx[14](value);
+    		/*words_1_updateVerbs_binding*/ ctx[17](value);
     	}
 
-    	let words_1_props = { verbs: /*verbs*/ ctx[4] };
+    	let words_1_props = { verbs: /*verbs*/ ctx[5] };
 
     	if (/*gerund*/ ctx[0] !== void 0) {
     		words_1_props.changeGerund = /*gerund*/ ctx[0];
@@ -5726,15 +5777,20 @@ var app = (function () {
     		words_1_props.changeTrans = /*trans*/ ctx[3];
     	}
 
-    	if (/*verbs*/ ctx[4] !== void 0) {
-    		words_1_props.updateVerbs = /*verbs*/ ctx[4];
+    	if (/*transPast*/ ctx[4] !== void 0) {
+    		words_1_props.changeTransPast = /*transPast*/ ctx[4];
+    	}
+
+    	if (/*verbs*/ ctx[5] !== void 0) {
+    		words_1_props.updateVerbs = /*verbs*/ ctx[5];
     	}
 
     	words_1 = new Words({ props: words_1_props, $$inline: true });
     	binding_callbacks.push(() => bind(words_1, 'changeGerund', words_1_changeGerund_binding));
     	binding_callbacks.push(() => bind(words_1, 'changeTrans', words_1_changeTrans_binding));
+    	binding_callbacks.push(() => bind(words_1, 'changeTransPast', words_1_changeTransPast_binding));
     	binding_callbacks.push(() => bind(words_1, 'updateVerbs', words_1_updateVerbs_binding));
-    	/*words_1_binding*/ ctx[15](words_1);
+    	/*words_1_binding*/ ctx[18](words_1);
 
     	const block = {
     		c: function create() {
@@ -5747,47 +5803,53 @@ var app = (function () {
     			t2 = space();
     			input1 = element("input");
     			t3 = space();
+    			input2 = element("input");
+    			t4 = space();
     			button = element("button");
     			button.textContent = "+";
-    			t5 = space();
-    			hr0 = element("hr");
     			t6 = space();
-    			create_component(quizmodal.$$.fragment);
+    			hr0 = element("hr");
     			t7 = space();
-    			hr1 = element("hr");
+    			create_component(quizmodal.$$.fragment);
     			t8 = space();
+    			hr1 = element("hr");
+    			t9 = space();
     			div1 = element("div");
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
-    			t9 = space();
-    			br = element("br");
     			t10 = space();
+    			br = element("br");
+    			t11 = space();
     			create_component(words_1.$$.fragment);
     			attr_dev(label, "for", "gerund");
-    			add_location(label, file, 201, 4, 3666);
+    			add_location(label, file, 257, 4, 4852);
     			attr_dev(input0, "type", "text");
     			attr_dev(input0, "id", "gerund");
     			attr_dev(input0, "placeholder", "Gerund");
-    			add_location(input0, file, 202, 4, 3705);
+    			add_location(input0, file, 258, 4, 4891);
     			attr_dev(input1, "type", "text");
     			attr_dev(input1, "id", "trans");
     			attr_dev(input1, "placeholder", "Translation");
-    			add_location(input1, file, 203, 4, 3784);
+    			add_location(input1, file, 259, 4, 4970);
+    			attr_dev(input2, "type", "text");
+    			attr_dev(input2, "id", "transPast");
+    			attr_dev(input2, "placeholder", "Past Tense");
+    			add_location(input2, file, 260, 4, 5054);
     			attr_dev(button, "class", "btn-info");
-    			add_location(button, file, 204, 4, 3868);
+    			add_location(button, file, 261, 4, 5145);
     			attr_dev(div0, "class", "form-control");
-    			add_location(div0, file, 200, 2, 3635);
-    			add_location(hr0, file, 207, 2, 3937);
-    			add_location(hr1, file, 211, 2, 4077);
+    			add_location(div0, file, 256, 2, 4821);
+    			add_location(hr0, file, 264, 2, 5214);
+    			add_location(hr1, file, 268, 2, 5354);
     			attr_dev(div1, "id", "sentences");
-    			add_location(div1, file, 213, 2, 4085);
+    			add_location(div1, file, 270, 2, 5362);
     			attr_dev(div2, "id", "form");
     			attr_dev(div2, "class", "svelte-1pfw7it");
-    			add_location(div2, file, 199, 0, 3617);
-    			add_location(br, file, 227, 0, 4437);
+    			add_location(div2, file, 255, 0, 4803);
+    			add_location(br, file, 289, 0, 5841);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -5803,31 +5865,35 @@ var app = (function () {
     			append_dev(div0, input1);
     			set_input_value(input1, /*trans*/ ctx[3]);
     			append_dev(div0, t3);
+    			append_dev(div0, input2);
+    			set_input_value(input2, /*transPast*/ ctx[4]);
+    			append_dev(div0, t4);
     			append_dev(div0, button);
-    			append_dev(div2, t5);
-    			append_dev(div2, hr0);
     			append_dev(div2, t6);
-    			mount_component(quizmodal, div2, null);
+    			append_dev(div2, hr0);
     			append_dev(div2, t7);
-    			append_dev(div2, hr1);
+    			mount_component(quizmodal, div2, null);
     			append_dev(div2, t8);
+    			append_dev(div2, hr1);
+    			append_dev(div2, t9);
     			append_dev(div2, div1);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].m(div1, null);
     			}
 
-    			insert_dev(target, t9, anchor);
-    			insert_dev(target, br, anchor);
     			insert_dev(target, t10, anchor);
+    			insert_dev(target, br, anchor);
+    			insert_dev(target, t11, anchor);
     			mount_component(words_1, target, anchor);
     			current = true;
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(input0, "input", /*input0_input_handler*/ ctx[8]),
-    					listen_dev(input1, "input", /*input1_input_handler*/ ctx[9]),
-    					listen_dev(button, "click", /*addVerb*/ ctx[6], false, false, false)
+    					listen_dev(input0, "input", /*input0_input_handler*/ ctx[9]),
+    					listen_dev(input1, "input", /*input1_input_handler*/ ctx[10]),
+    					listen_dev(input2, "input", /*input2_input_handler*/ ctx[11]),
+    					listen_dev(button, "click", /*addVerb*/ ctx[7], false, false, false)
     				];
 
     				mounted = true;
@@ -5842,13 +5908,17 @@ var app = (function () {
     				set_input_value(input1, /*trans*/ ctx[3]);
     			}
 
+    			if (dirty & /*transPast*/ 16 && input2.value !== /*transPast*/ ctx[4]) {
+    				set_input_value(input2, /*transPast*/ ctx[4]);
+    			}
+
     			const quizmodal_changes = {};
     			if (dirty & /*gerund*/ 1) quizmodal_changes.gerund = /*gerund*/ ctx[0];
     			if (dirty & /*trans*/ 8) quizmodal_changes.trans = /*trans*/ ctx[3];
     			quizmodal.$set(quizmodal_changes);
 
-    			if (dirty & /*phrases, gerund, trans*/ 137) {
-    				each_value = /*phrases*/ ctx[7];
+    			if (dirty & /*phrases, gerund, trans, transPast*/ 281) {
+    				each_value = /*phrases*/ ctx[8];
     				validate_each_argument(each_value);
     				let i;
 
@@ -5872,7 +5942,7 @@ var app = (function () {
     			}
 
     			const words_1_changes = {};
-    			if (dirty & /*verbs*/ 16) words_1_changes.verbs = /*verbs*/ ctx[4];
+    			if (dirty & /*verbs*/ 32) words_1_changes.verbs = /*verbs*/ ctx[5];
 
     			if (!updating_changeGerund && dirty & /*gerund*/ 1) {
     				updating_changeGerund = true;
@@ -5886,9 +5956,15 @@ var app = (function () {
     				add_flush_callback(() => updating_changeTrans = false);
     			}
 
-    			if (!updating_updateVerbs && dirty & /*verbs*/ 16) {
+    			if (!updating_changeTransPast && dirty & /*transPast*/ 16) {
+    				updating_changeTransPast = true;
+    				words_1_changes.changeTransPast = /*transPast*/ ctx[4];
+    				add_flush_callback(() => updating_changeTransPast = false);
+    			}
+
+    			if (!updating_updateVerbs && dirty & /*verbs*/ 32) {
     				updating_updateVerbs = true;
-    				words_1_changes.updateVerbs = /*verbs*/ ctx[4];
+    				words_1_changes.updateVerbs = /*verbs*/ ctx[5];
     				add_flush_callback(() => updating_updateVerbs = false);
     			}
 
@@ -5907,13 +5983,13 @@ var app = (function () {
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(div2);
-    			/*quizmodal_binding*/ ctx[11](null);
+    			/*quizmodal_binding*/ ctx[13](null);
     			destroy_component(quizmodal);
     			destroy_each(each_blocks, detaching);
-    			if (detaching) detach_dev(t9);
-    			if (detaching) detach_dev(br);
     			if (detaching) detach_dev(t10);
-    			/*words_1_binding*/ ctx[15](null);
+    			if (detaching) detach_dev(br);
+    			if (detaching) detach_dev(t11);
+    			/*words_1_binding*/ ctx[18](null);
     			destroy_component(words_1, detaching);
     			mounted = false;
     			run_all(dispose);
@@ -5949,6 +6025,7 @@ var app = (function () {
     	let words;
     	let gerund = "khaa";
     	let trans = "eating";
+    	let transPast = "ate";
     	let questions = [];
     	let sentences;
 
@@ -5963,7 +6040,8 @@ var app = (function () {
     		var verb = {
     			_id: new Date().toISOString(),
     			verb: gerund,
-    			trans
+    			trans,
+    			transPast
     		};
 
     		db.put(verb, function callback(err, result) {
@@ -5990,28 +6068,82 @@ var app = (function () {
     			phrase: "Mein <b>~</b>rahee hun"
     		},
     		{
+    			gender: "neutral",
+    			formality: "formal",
+    			trans: "We're ~",
+    			phrase: "Hum <b>~</b>rahey hein "
+    		},
+    		{
+    			gender: "masc",
+    			formality: "inform",
+    			trans: "You're ~",
+    			phrase: "Tum <b>~</b>rahey ho "
+    		},
+    		{
+    			gender: "fem",
+    			formality: "inform",
+    			trans: "You're ~",
+    			phrase: "Tum <b>~</b>rahee ho "
+    		},
+    		{
+    			gender: "masc",
+    			formality: "formal",
+    			trans: "You're ~",
+    			phrase: "Aap <b>~</b>rahey hein"
+    		},
+    		{
+    			gender: "fem",
+    			formality: "formal",
+    			trans: "You're ~",
+    			phrase: "Aap <b>~</b>rahee hein"
+    		},
+    		{
     			gender: "masc",
     			formality: "informal",
-    			trans: "He ~s",
+    			trans: "He's ~",
+    			phrase: "Woh <b>~</b>rahaa hay"
+    		},
+    		{
+    			gender: "fem",
+    			formality: "informal",
+    			trans: "She's ~",
+    			phrase: "Woh <b>~</b>rahee hay"
+    		},
+    		{
+    			gender: "masc",
+    			formality: "formal",
+    			trans: "He's ~",
+    			phrase: "Woh <b>~</b>rahey hein"
+    		},
+    		{
+    			gender: "fem",
+    			formality: "formal",
+    			trans: "She's ~",
+    			phrase: "Woh <b>~</b>raheen hein"
+    		},
+    		{
+    			gender: "masc",
+    			formality: "informal",
+    			trans: "He --",
     			phrase: "Woh <b>~</b>ta he "
     		},
     		{
     			gender: "fem",
     			formality: "informal",
-    			trans: "She ~s",
+    			trans: "She --",
     			phrase: "Woh <b>~</b>ti he"
     		},
     		{
     			gender: "masc",
     			formality: "formal",
-    			trans: "He ~s",
+    			trans: "He --",
     			phrase: "Woh <b>~</b>tay hein "
     		},
     		{
     			gender: "fem",
     			formality: "formal",
-    			trans: "She ~s",
-    			phrase: "Woh <b>~</b>tee hein"
+    			trans: "She --",
+    			phrase: "Woh <b>~</b>teen hein"
     		},
     		{
     			gender: "masc",
@@ -6103,6 +6235,11 @@ var app = (function () {
     		$$invalidate(3, trans);
     	}
 
+    	function input2_input_handler() {
+    		transPast = this.value;
+    		$$invalidate(4, transPast);
+    	}
+
     	const func = () => changeWord();
 
     	function quizmodal_binding($$value) {
@@ -6122,9 +6259,14 @@ var app = (function () {
     		$$invalidate(3, trans);
     	}
 
+    	function words_1_changeTransPast_binding(value) {
+    		transPast = value;
+    		$$invalidate(4, transPast);
+    	}
+
     	function words_1_updateVerbs_binding(value) {
     		verbs = value;
-    		$$invalidate(4, verbs);
+    		$$invalidate(5, verbs);
     	}
 
     	function words_1_binding($$value) {
@@ -6142,6 +6284,7 @@ var app = (function () {
     		words,
     		gerund,
     		trans,
+    		transPast,
     		questions,
     		sentences,
     		sanitize,
@@ -6158,11 +6301,12 @@ var app = (function () {
     		if ('words' in $$props) $$invalidate(2, words = $$props.words);
     		if ('gerund' in $$props) $$invalidate(0, gerund = $$props.gerund);
     		if ('trans' in $$props) $$invalidate(3, trans = $$props.trans);
+    		if ('transPast' in $$props) $$invalidate(4, transPast = $$props.transPast);
     		if ('questions' in $$props) questions = $$props.questions;
     		if ('sentences' in $$props) sentences = $$props.sentences;
     		if ('db' in $$props) db = $$props.db;
-    		if ('verbs' in $$props) $$invalidate(4, verbs = $$props.verbs);
-    		if ('phrases' in $$props) $$invalidate(7, phrases = $$props.phrases);
+    		if ('verbs' in $$props) $$invalidate(5, verbs = $$props.verbs);
+    		if ('phrases' in $$props) $$invalidate(8, phrases = $$props.phrases);
     		if ('bones' in $$props) bones = $$props.bones;
     	};
 
@@ -6181,16 +6325,19 @@ var app = (function () {
     		quiz,
     		words,
     		trans,
+    		transPast,
     		verbs,
     		changeWord,
     		addVerb,
     		phrases,
     		input0_input_handler,
     		input1_input_handler,
+    		input2_input_handler,
     		func,
     		quizmodal_binding,
     		words_1_changeGerund_binding,
     		words_1_changeTrans_binding,
+    		words_1_changeTransPast_binding,
     		words_1_updateVerbs_binding,
     		words_1_binding
     	];

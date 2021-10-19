@@ -4,11 +4,13 @@
 
     export let changeGerund
     export let changeTrans
+    export let changeTransPast
     export let updateVerbs
 
-    function populateMain(gerund, trans){
+    function populateMain(gerund, trans, transPast){
         changeGerund = gerund
         changeTrans = trans
+        changeTransPast = transPast
     }
 
     export function getVerbs(){
@@ -31,7 +33,8 @@
         console.log(verb)
         populateMain(
             verb["doc"]["verb"], 
-            verb["doc"]["trans"]
+            verb["doc"]["trans"],
+            verb["doc"]["transPast"]
         )
 
     }
@@ -75,7 +78,7 @@
 
 <ul id="words">
     {#each verbs as verb}
-        <li on:click={populateMain(verb["doc"]["verb"], verb["doc"]["trans"])} gerund={verb["doc"]["verb"]} trans={verb["doc"]["trans"]}>
+        <li on:click={populateMain(verb["doc"]["verb"], verb["doc"]["trans"], verb["doc"]["transPast"])} gerund={verb["doc"]["verb"]} trans={verb["doc"]["trans"]} transPast={verb["doc"]["transPast"]}>
             <span on:click={removeWord(verb["doc"]["_id"])}>x</span>
             {verb["doc"]["verb"]}</li>
     {/each}

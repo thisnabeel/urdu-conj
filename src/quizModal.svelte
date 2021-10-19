@@ -4,6 +4,7 @@
 
     export let gerund
     export let trans
+    export let transPast
     export let phrases
 
     let questions = []
@@ -38,7 +39,11 @@
     
 
     function convertedTrans(input){
-        return `${getFormalityEmoji(input["formality"])} ${getGenderEmoji(input["gender"])} ${input["trans"].replaceAll("~", trans).replaceAll("|", trans.split("ing")[0])}`
+        let np = input["trans"].replaceAll("~", trans)
+          .replaceAll("|", trans.split("ing")[0])
+          .replaceAll("<-", transPast)
+          .replaceAll("--", trans.split("ing")[0] + "s")
+        return `${getFormalityEmoji(input["formality"])} ${getGenderEmoji(input["gender"])} ${np}`
     }
 
     function getFormalityEmoji(input){
